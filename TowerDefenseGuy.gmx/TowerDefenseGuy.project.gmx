@@ -27,19 +27,13 @@
     <sprite>sprites\sprite8</sprite>
     <sprite>sprites\sprite9</sprite>
     <sprites name="World blocks">
-      <sprite>sprites\ground</sprite>
-      <sprite>sprites\edge_top</sprite>
-      <sprite>sprites\edge_bot</sprite>
-      <sprite>sprites\edge_right</sprite>
-      <sprite>sprites\edge_left</sprite>
-      <sprite>sprites\edge_corner_topright</sprite>
-      <sprite>sprites\edge_corner_botright</sprite>
-      <sprite>sprites\edge_corner_topleft</sprite>
-      <sprite>sprites\edge_corner_botleft</sprite>
+      <sprite>sprites\edge_block</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\TestBackground</background>
+    <background>background\grass</background>
+    <background>background\Tileset</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -138,9 +132,11 @@
     <objects name="Projectiles">
       <object>objects\simpleBullet</object>
     </objects>
+    <object>objects\edge</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\Sprite_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
