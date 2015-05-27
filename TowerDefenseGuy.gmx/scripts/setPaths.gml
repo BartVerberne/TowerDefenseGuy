@@ -31,10 +31,10 @@ while(true)
         var BR = xPlus && yMin &&                         isGridFreeXYB(nodeX + 1 - 1, nodeY - 1 - 1, true);
         var BL = xMin && yMin &&                          isGridFreeXYB(nodeX - 1 - 1, nodeY - 1 - 1, true); 
          
-        if (TR)     setSeekGridParent(newNodes, nodeX, nodeY, +1, +1, 1.4142);
-        if (TL)     setSeekGridParent(newNodes, nodeX, nodeY, -1, +1, 1.4142);
-        if (BR)     setSeekGridParent(newNodes, nodeX, nodeY, +1, -1, 1.4142);
-        if (BL)     setSeekGridParent(newNodes, nodeX, nodeY, -1, -1, 1.4142);
+        //if (TR)     setSeekGridParent(newNodes, nodeX, nodeY, +1, +1, 1.4142);
+        //if (TL)     setSeekGridParent(newNodes, nodeX, nodeY, -1, +1, 1.4142);
+        //if (BR)     setSeekGridParent(newNodes, nodeX, nodeY, +1, -1, 1.4142);
+        //if (BL)     setSeekGridParent(newNodes, nodeX, nodeY, -1, -1, 1.4142);
         if (xPlus)  setSeekGridParent(newNodes, nodeX, nodeY, +1, 0, 1);
         if (xMin)   setSeekGridParent(newNodes, nodeX, nodeY, -1, 0, 1);
         if (yPlus)  setSeekGridParent(newNodes, nodeX, nodeY, 0, +1, 1);
