@@ -1,0 +1,1 @@
+ds_list_delete(ProjCtrl.allProjectiles, ds_list_find_index(ProjCtrl.allProjectiles, id));
