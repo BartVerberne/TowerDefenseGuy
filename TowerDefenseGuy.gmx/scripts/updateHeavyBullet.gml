@@ -33,7 +33,7 @@ with (bulletID)
             {
                 // we reached the target
                 // damage the creep and distory this bullet
-                damageCreep(targetCreep, myDamage);
+                damageCreepRange(targetCreep, myDamage, myHitRadius);
                 instance_destroy();
                 return 0;
             }
@@ -85,7 +85,7 @@ with (bulletID)
                 y = newY;
             }
             
-            damageCreep(collision, myDamage);
+            damageCreepRange(collision, myDamage, myHitRadius);
             myHitDone = true;
         }
         else {

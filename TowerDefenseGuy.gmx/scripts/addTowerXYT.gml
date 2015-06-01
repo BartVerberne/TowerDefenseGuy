@@ -8,6 +8,7 @@ if (isGridFreeXYB(gridX,gridY, false))
     
     switch(towerType) {
         case Grid.GRID_TOWER_0 : toPlaceObject = Tower_0; break;
+        case Grid.GRID_HEAVY_TOWER : toPlaceObject = HeavyTower; break;
     }
 
     if (toPlaceObject != 0)

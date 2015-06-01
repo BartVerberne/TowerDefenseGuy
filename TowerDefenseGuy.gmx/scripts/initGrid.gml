@@ -2,7 +2,6 @@ gridPixelSize = 32;
 gridWidth = room_width / gridPixelSize;
 gridHeight = room_height / gridPixelSize;
 
-
 room_caption = string(fps); 
 
 image_xscale = gridWidth;
@@ -16,6 +15,9 @@ GRID_EMPTY = -2;
 GRID_EDGE = -1;
 GRID_BLOCKED = 0;
 GRID_TOWER_0 = 1;
+GRID_HEAVY_TOWER = 2;
+GRID_SNIPER = 3;
+GRID_SPLITTER = 4;
 
 GRID_NO_ID = 0;
 

@@ -42,6 +42,7 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\initGame.gml</script>
     <script>scripts\poinstLineDist.gml</script>
     <script>scripts\ClickDebug.gml</script>
     <scripts name="Grid">
@@ -83,10 +84,16 @@
         <script>scripts\upgradeTower_0.gml</script>
         <script>scripts\tower_0_update.gml</script>
       </scripts>
+      <scripts name="HeavyTower">
+        <script>scripts\initHeavyTurret.gml</script>
+        <script>scripts\update_heavy_tower.gml</script>
+        <script>scripts\upgradeHeavyTower.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Creeps">
       <script>scripts\initCreeps.gml</script>
       <script>scripts\updateCreeps.gml</script>
+      <script>scripts\damageCreepRange.gml</script>
       <script>scripts\spawnCreepXYT.gml</script>
       <scripts name="CreepAbstract">
         <script>scripts\initCreepAbstr.gml</script>
@@ -110,11 +117,16 @@
       <scripts name="TargetProjectile">
         <scripts name="targetProjAbstr">
           <script>scripts\initTargetProjAbstr.gml</script>
-          <script>scripts\setBulletTarget.gml</script>
+          <script>scripts\setBulletStats.gml</script>
+          <script>scripts\setDamage.gml</script>
         </scripts>
         <scripts name="SimpleBullet">
           <script>scripts\updateSimpleBullet.gml</script>
           <script>scripts\initSimpleBullet.gml</script>
+        </scripts>
+        <scripts name="HeavyBullet">
+          <script>scripts\initHeavyBullet.gml</script>
+          <script>scripts\updateHeavyBullet.gml</script>
         </scripts>
       </scripts>
     </scripts>
@@ -123,6 +135,7 @@
     <font>fonts\FpsFont</font>
   </fonts>
   <objects name="objects">
+    <object>objects\OB_Game</object>
     <object>objects\Player</object>
     <objects name="GameLogic">
       <object>objects\Grid</object>
@@ -131,13 +144,14 @@
     </objects>
     <objects name="Towers">
       <object>objects\Tower_0</object>
-      <object>objects\Heavy_Turret</object>
+      <object>objects\HeavyTower</object>
     </objects>
     <objects name="Creeps">
       <object>objects\Creep_0</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\simpleBullet</object>
+      <object>objects\heavyBullet</object>
     </objects>
     <object>objects\edge</object>
   </objects>

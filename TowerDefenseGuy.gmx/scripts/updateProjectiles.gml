@@ -15,6 +15,7 @@ for(var i = 0; i < listSize; i++)
         switch(bulletType)
         {
             case ProjCtrl.SIMPLE_BULLET : if(updateSimpleBullet(bulletID) == 0) {i--; listSize--}; break;
+            case ProjCtrl.HEAVY_BULLET : if (updateHeavyBullet(bulletID) == 0) {i--; listSize--}; break;
         }
     }
 }

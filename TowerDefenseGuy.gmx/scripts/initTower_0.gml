@@ -3,7 +3,7 @@ initTowerAbstr();
 // overrides:
 myType = Grid.GRID_TOWER_0;
 myLevel = 0;
-Grid.gridContent[myGridX, myGridY] = Grid.GRID_TOWER_0;
+Grid.gridContent[myGridX, myGridY] = myType;
 
 // tower_0 specific
 

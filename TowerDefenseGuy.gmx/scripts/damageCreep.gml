@@ -8,5 +8,8 @@ with(creepId) {
     if (myHealth < 0)
     {
         instance_destroy();   
+        return 1;
     }
 }
+
+return 0;

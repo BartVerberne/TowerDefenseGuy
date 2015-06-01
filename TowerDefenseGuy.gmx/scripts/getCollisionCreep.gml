@@ -1,8 +1,8 @@
-var startPx = argument0;
-var startPy = argument1;
-var endPx = argument2;
-var endPy = argument3;
-var collisionTreshHold = argument4;
+var startPx = x;
+var startPy = y;
+var endPx = argument0;
+var endPy = argument1;
+var collisionTreshHold = argument2;
 
 var startPxAdd = -collisionTreshHold;
 if (startPx > endPx) startPixelAdd = collisionTreshHold;

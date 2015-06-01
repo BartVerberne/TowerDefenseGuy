@@ -7,10 +7,8 @@ with (towerID)
     }
     
     sprite_set_offset(sprite_index,0,0);
+
+    myDamage = 15;
+    myReloadTime = 700;
+    myRange = 250;
 }
-
-
-
-myDamage = 15;
-myReloadTime = 700;
-myRange = 250;
