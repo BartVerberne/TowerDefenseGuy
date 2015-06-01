@@ -1,7 +1,7 @@
 var xS = argument0;
 var yS = argument1;
 
-if (isGridFreeXYB(xS, yS, false) && ds_list_size(creepBlock[xS+1, yS+1]) == 0)
+if (isGridFreeXYB(xS, yS, false) && ds_list_size(creepBlock[xS, yS]) == 0)
 {
     var allowed = true;
     Grid.gridContent[xS, yS] = Grid.GRID_BLOCKED;

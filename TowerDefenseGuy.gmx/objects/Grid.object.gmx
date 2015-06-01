@@ -50,91 +50,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="5">
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>gridClickedRight</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>gridClicked</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="76">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>601</id>
@@ -256,6 +172,90 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="6" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>gridClickedRight</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>gridClicked</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -273,16 +273,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (delta_time &gt; 1000000 / 25) show_debug_message("delta_time : " + string(delta_time)); 
-if (false) 
-for (var cY = 0; cY &lt; Grid.gridWidth; cY++) {
+            <string>//if (delta_time &gt; 1000000 / 25) show_debug_message("delta_time : " + string(delta_time)); 
+//if (false) 
+/*for (var cY = 0; cY &lt; Grid.gridHeight; cY++) {
     for (var cX = 0; cX &lt; Grid.gridWidth; cX++) {
-        var xDir = ds_list_find_value(gridPaths[cX+1, cY+1], 0);
-        var yDir = ds_list_find_value(gridPaths[cX+1, cY+1], 1);
-        draw_text(cX * Grid.gridPixelSize, cY * Grid.gridPixelSize, "." + string(xDir) + string(yDir));
+        var xDir = Grid.gridPathsXdir[cX, cY];
+        var yDir = Grid.gridPathsYdir[cX, cY];
+        
     }
 }
+*/
 
+
+draw_set_font(FpsFont);
+draw_set_color(make_color_rgb(255,0,0));
+draw_text(room_width-40, 6, string(fps));
 </string>
           </argument>
         </arguments>

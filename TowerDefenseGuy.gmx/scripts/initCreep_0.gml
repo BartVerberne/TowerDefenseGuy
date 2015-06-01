@@ -2,7 +2,7 @@ initCreepAbstr();
 
 // override variables:
 
-myHealth = 100;
+myHealth = 70;
 mySpeed = 3.5;
 myType = CreepCtrl.CREEP_0;
 myDamage = 10;

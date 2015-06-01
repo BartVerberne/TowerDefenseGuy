@@ -16,5 +16,5 @@ ds_list_destroy(destroyListeners);
 
 ds_list_delete(CreepCtrl.allCreeps, ds_list_find_index(CreepCtrl.allCreeps, id));
 
-ds_list_delete(Grid.creepBlock[myGridX + curDirX + 1, myGridY + curDirY + 1], 
-                                ds_list_find_index(Grid.creepBlock[myGridX + curDirX + 1, myGridY + curDirY + 1], id));
+ds_list_delete(Grid.creepBlock[myGridX + curDirX, myGridY + curDirY], 
+                                ds_list_find_index(Grid.creepBlock[myGridX + curDirX, myGridY + curDirY], id));

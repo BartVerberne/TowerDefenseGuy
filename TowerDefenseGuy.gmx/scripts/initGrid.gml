@@ -2,27 +2,44 @@ gridPixelSize = 32;
 gridWidth = room_width / gridPixelSize;
 gridHeight = room_height / gridPixelSize;
 
+
+room_caption = string(fps); 
+
 image_xscale = gridWidth;
 image_yscale = gridHeight;
 //visible = false;
 depth = -2;
 
 // basic grid representation:
-
-GRID_EMPTY = 0;
-GRID_BLOCKED = 1;
-GRID_TOWER_0 = 2;
+// negative for walkable by creeps!
+GRID_EMPTY = -2;
+GRID_EDGE = -1;
+GRID_BLOCKED = 0;
+GRID_TOWER_0 = 1;
 
 GRID_NO_ID = 0;
 
-gridContent[0,0] = 0;
+gridContent[gridWidth-1,gridHeight-1] = 0;
 gridIds[0,0] = 0;
 
-for (var cY = 0; cY < gridWidth; cY++) {
-    for (var cX = 0; cX < gridWidth; cX++) {
+for (var cY = 1; cY < gridHeight - 1; cY++) {
+    for (var cX = 1; cX < gridWidth - 1; cX++) {
         gridContent[cX, cY] = GRID_EMPTY;
     }
 }
+
+for(cY = 0; cY < gridHeight; cY++)
+{
+    gridContent[0, cY] = GRID_EDGE;
+    gridContent[gridWidth - 1, cY] = GRID_EDGE;
+}
+
+for(cX = 1; cX < gridWidth - 1; cX++)
+{
+    gridContent[cX, 0] = GRID_EDGE;
+    gridContent[cX, gridHeight - 1] = GRID_EDGE;
+}
+
 for (var cY = 0; cY < gridWidth; cY++) {
     for (var cX = 0; cX < gridWidth; cX++) {
         gridIds[cX, cY] = GRID_NO_ID;
@@ -34,7 +51,7 @@ for (var cY = 0; cY < gridWidth; cY++) {
 
 NOT_VISITED = 0;
 VISITED = 1;
-gridSeekBlock[0,0] = 0;
+gridSeekBlock[gridWidth - 1, gridHeight - 1] = 0;
 
 for (var cY = 0; cY < gridWidth; cY++) {
     for (var cX = 0; cX < gridWidth; cX++) {
@@ -42,16 +59,12 @@ for (var cY = 0; cY < gridWidth; cY++) {
     }
 }
 
-
-
-//ATTETNTION : creepBlock and gridPaths has an extra layer around the map!
-
 // Creep registrations
 
-creepBlock[0,0] = 0;
+creepBlock[gridWidth - 1, gridHeight - 1] = 0;
 
-for (var cY = 0; cY < gridWidth + 2; cY++) {
-    for (var cX = 0; cX < gridWidth + 2; cX++) {
+for (var cY = 0; cY < gridHeight; cY++) {
+    for (var cX = 0; cX < gridWidth; cX++) {
         creepBlock[cX, cY] = ds_list_create();
     }
 }
@@ -63,15 +76,13 @@ PATH_PARENT_CHECK = 0;
 PATHDIR_X = 0;
 PATHDIR_Y = 1;
 PATH_LENGTH = 2;
-//PATH_STEPSIZE = 3;
 
-gridPathsXdir[0,0] = 0;
-gridPathsYdir[0,0] = 0;
-gridPathsLength[0,0] = 0;
-//gridPathsStepSize[0,0] = 0;
+gridPathsXdir[gridWidth - 1, gridHeight - 1] = 0;
+gridPathsYdir[gridWidth - 1, gridHeight - 1] = 0;
+gridPathsLength[gridWidth - 1, gridHeight - 1] = 0;
 
-for (var cY = 0; cY < gridWidth +2; cY++) {
-    for (var cX = 0; cX < gridWidth +2; cX++) {
+for (var cY = 0; cY < gridHeight; cY++) {
+    for (var cX = 0; cX < gridWidth; cX++) {
         gridPathsXdir[cX,cY] = 0;
         gridPathsYdir[cX,cY] = 0;
         gridPathsLength[cX,cY] = 0;

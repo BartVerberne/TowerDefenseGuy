@@ -3,9 +3,10 @@ var bulletID = argument0;
 with (bulletID)
 {
     // test out of map
-    if(myHitDone || x > room_width * 1.2 || x < 0 - room_width * 0.2 || y > room_height * 1.2 || y < 0 - room_height * 0.2)
+    if (myHitDone || x > room_width * 1.2 || x < 0 - room_width * 0.2 || y > room_height * 1.2 || y < 0 - room_height * 0.2)
     {
         instance_destroy();
+        return 0;
     }   
     else {
         var dt = (delta_time * 0.000001);
@@ -93,3 +94,5 @@ with (bulletID)
         }
     }
 }
+
+return 1;

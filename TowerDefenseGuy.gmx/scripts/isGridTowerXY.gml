@@ -1,9 +1,9 @@
 var xS = argument0;
 var yS = argument1;
 
-if (xS < 0 || yS < 0 || 
-    xS >= Grid.gridWidth || 
-    yS >= Grid.gridHeight) {
+if (xS < 1 || yS < 1 || 
+    xS >= Grid.gridWidth -1|| 
+    yS >= Grid.gridHeight -1) {
     return false;
 }
 else {

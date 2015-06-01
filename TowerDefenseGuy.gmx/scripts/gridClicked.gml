@@ -1,9 +1,6 @@
 var gridX = floor(mouse_x / Grid.gridPixelSize);
 var gridY = floor(mouse_y / Grid.gridPixelSize);
 
-show_debug_message("clicked at:    " + string(mouse_x) + ", " + string(mouse_y));
-show_debug_message("which is grid: " + string(gridX) + ", " + string(gridY));
-
 if (isGridTowerXY(gridX, gridY))
 {
     var towerID = Grid.gridIds[gridX, gridY];

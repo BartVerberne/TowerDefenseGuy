@@ -1,7 +1,10 @@
 
-for(var i = 0; i < ds_list_size(ProjCtrl.allProjectiles); i++)
+var projList = ProjCtrl.allProjectiles
+var listSize = ds_list_size(projList);
+
+for(var i = 0; i < listSize; i++)
 {
-    var bulletID = ds_list_find_value(ProjCtrl.allProjectiles, i);
+    var bulletID = ds_list_find_value(projList, i);
     with(bulletID)
     {
         var bulletType;
@@ -11,7 +14,7 @@ for(var i = 0; i < ds_list_size(ProjCtrl.allProjectiles); i++)
     
         switch(bulletType)
         {
-            case ProjCtrl.SIMPLE_BULLET : updateSimpleBullet(bulletID); break;
+            case ProjCtrl.SIMPLE_BULLET : if(updateSimpleBullet(bulletID) == 0) {i--; listSize--}; break;
         }
     }
 }
