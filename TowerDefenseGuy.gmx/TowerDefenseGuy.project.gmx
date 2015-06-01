@@ -32,7 +32,6 @@
   </sprites>
   <backgrounds name="background">
     <background>background\TestBackground</background>
-    <background>background\grass</background>
     <background>background\Tileset</background>
   </backgrounds>
   <paths name="paths"/>
