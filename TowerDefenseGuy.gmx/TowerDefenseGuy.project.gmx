@@ -13,6 +13,12 @@
         <sprite>sprites\Tower_0_lvl1</sprite>
         <sprite>sprites\Tower_0_lvl0</sprite>
       </sprites>
+      <sprites name="Tower_1">
+        <sprite>sprites\Tower_1_1_base</sprite>
+        <sprite>sprites\Tower_1_1_turret</sprite>
+        <sprite>sprites\Tower_1_2_base</sprite>
+        <sprite>sprites\Tower_1_2_turret</sprite>
+      </sprites>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\sprite0</sprite>
