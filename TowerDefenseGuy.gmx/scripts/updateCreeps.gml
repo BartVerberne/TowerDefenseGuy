@@ -1,5 +1,5 @@
 
-var creepList = CreepCtrl.allCreeps;
+var creepList = OB_Game.allCreeps;
 
 var listSize = ds_list_size(creepList)
 
@@ -10,7 +10,7 @@ var gridPixelSize = Grid.gridPixelSize;
 
 for(var i = 0; i < listSize; i++)
 {
-    with(ds_list_find_value(CreepCtrl.allCreeps, i))
+    with(ds_list_find_value(creepList, i))
     {
         // check end
         if (pixelDistToPlayerPxPy(x, y) < myPlayerReachTreshold) 
@@ -63,7 +63,7 @@ for(var i = 0; i < listSize; i++)
             
             // Some creep specific behaviour:
         
-            if (myType == CreepCtrl.CREEP_0)
+            if (myType == OB_Game.CREEP_0)
             {
                 // nothing special yet
             }
@@ -73,4 +73,3 @@ for(var i = 0; i < listSize; i++)
         }
     }
 }
-

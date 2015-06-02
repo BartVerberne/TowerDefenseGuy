@@ -1,4 +1,4 @@
-ds_list_add(ProjCtrl.allProjectiles, id);
+ds_list_add(OB_Game.allProjectiles, id);
 
 // override:
 myType = 0;

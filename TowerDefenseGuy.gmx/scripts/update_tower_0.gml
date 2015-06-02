@@ -15,7 +15,7 @@ with(tID)
             // spawn bullet attacking the creep
             var bulletID = instance_create(myGridX * Grid.gridPixelSize, 
                             myGridY * Grid.gridPixelSize,
-                            heavyBullet); 
+                            simpleBullet); 
             // give bullet a target
             setBulletStats(bulletID, creepTargetID, myDamage);            
             

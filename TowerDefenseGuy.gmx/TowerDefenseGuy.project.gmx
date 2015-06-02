@@ -19,6 +19,10 @@
         <sprite>sprites\Tower_1_2_base</sprite>
         <sprite>sprites\Tower_1_2_turret</sprite>
       </sprites>
+      <sprites name="SniperTower">
+        <sprite>sprites\Sniper_0_base</sprite>
+        <sprite>sprites\Sniper_1_base</sprite>
+      </sprites>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\sprite0</sprite>
@@ -37,12 +41,13 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\TestBackground</background>
     <background>background\Tileset</background>
+    <background>background\background2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\initGame.gml</script>
+    <script>scripts\updateGame.gml</script>
     <script>scripts\poinstLineDist.gml</script>
     <script>scripts\ClickDebug.gml</script>
     <scripts name="Grid">
@@ -81,13 +86,23 @@
       </scripts>
       <scripts name="Tower_0">
         <script>scripts\initTower_0.gml</script>
+        <script>scripts\update_tower_0.gml</script>
         <script>scripts\upgradeTower_0.gml</script>
-        <script>scripts\tower_0_update.gml</script>
       </scripts>
       <scripts name="HeavyTower">
         <script>scripts\initHeavyTurret.gml</script>
         <script>scripts\update_heavy_tower.gml</script>
         <script>scripts\upgradeHeavyTower.gml</script>
+      </scripts>
+      <scripts name="SniperTower">
+        <script>scripts\initSniperTower.gml</script>
+        <script>scripts\update_sniper_tower.gml</script>
+        <script>scripts\upgradeSniperTower.gml</script>
+      </scripts>
+      <scripts name="SplitterTower">
+        <script>scripts\initSplitterTower.gml</script>
+        <script>scripts\update_splitter_tower.gml</script>
+        <script>scripts\upgradeSplitterTower.gml</script>
       </scripts>
     </scripts>
     <scripts name="Creeps">
@@ -101,6 +116,7 @@
         <script>scripts\creepDeleted.gml</script>
         <script>scripts\addDistoryListener.gml</script>
         <script>scripts\damageCreep.gml</script>
+        <script>scripts\drawhealth.gml</script>
       </scripts>
       <scripts name="Creep_0">
         <script>scripts\initCreep_0.gml</script>
@@ -118,7 +134,6 @@
         <scripts name="targetProjAbstr">
           <script>scripts\initTargetProjAbstr.gml</script>
           <script>scripts\setBulletStats.gml</script>
-          <script>scripts\setDamage.gml</script>
         </scripts>
         <scripts name="SimpleBullet">
           <script>scripts\updateSimpleBullet.gml</script>
@@ -139,12 +154,11 @@
     <object>objects\Player</object>
     <objects name="GameLogic">
       <object>objects\Grid</object>
-      <object>objects\ProjCtrl</object>
-      <object>objects\CreepCtrl</object>
     </objects>
     <objects name="Towers">
       <object>objects\Tower_0</object>
       <object>objects\HeavyTower</object>
+      <object>objects\SniperTower</object>
     </objects>
     <objects name="Creeps">
       <object>objects\Creep_0</object>

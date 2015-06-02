@@ -6,10 +6,11 @@ curDirY = 0;
 curTargetDist = 0;
 destroyListeners = ds_list_create();
 
-ds_list_add(CreepCtrl.allCreeps, id);
+ds_list_add(OB_Game.allCreeps, id);
 ds_list_add(Grid.creepBlock[myGridX, myGridY], id);
 
 // override:
+myHealthMax = 0;
 myHealth = 0;
 mySpeed = 0;
 myType = 0;
