@@ -68,6 +68,7 @@
   <backgrounds name="background">
     <background>background\Tileset</background>
     <background>background\background2</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
