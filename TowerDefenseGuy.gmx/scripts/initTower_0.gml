@@ -14,6 +14,6 @@ Grid.gridContent[myGridX, myGridY] = myType;
 // it can hit targets besides the original target
 
 myNextShotTime = 0;
-myReloadTime = 1000; // ms
-myDamage = 10;
+myReloadTime = 400; // ms
+myDamage = 5;
 myRange = 150;

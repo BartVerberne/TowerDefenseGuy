@@ -1,7 +1,7 @@
 initCreepAbstr();
 
 // override variables:
-myHealthMax = 200;
+myHealthMax = 60;
 myHealth = myHealthMax;
 mySpeed = 3.5;
 myType = OB_Game.CREEP_0;

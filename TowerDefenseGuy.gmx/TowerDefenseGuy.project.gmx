@@ -39,6 +39,10 @@
         <sprite>sprites\Heavy_2_base</sprite>
         <sprite>sprites\Heavy_2_turret</sprite>
       </sprites>
+      <sprites name="SplitterTower">
+        <sprite>sprites\Sprite_splitter_tower_0</sprite>
+        <sprite>sprites\Sprite_splitter_tower_1</sprite>
+      </sprites>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\sprite0</sprite>
@@ -55,6 +59,8 @@
     <sprites name="World blocks">
       <sprite>sprites\edge_block</sprite>
     </sprites>
+    <sprite>sprites\sprite17</sprite>
+    <sprite>sprites\sprite18</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Tileset</background>
@@ -152,12 +158,16 @@
           <script>scripts\setBulletStats.gml</script>
         </scripts>
         <scripts name="SimpleBullet">
-          <script>scripts\updateSimpleBullet.gml</script>
           <script>scripts\initSimpleBullet.gml</script>
+          <script>scripts\updateSimpleBullet.gml</script>
         </scripts>
         <scripts name="HeavyBullet">
           <script>scripts\initHeavyBullet.gml</script>
           <script>scripts\updateHeavyBullet.gml</script>
+        </scripts>
+        <scripts name="PierceBullet">
+          <script>scripts\initPierceBullet.gml</script>
+          <script>scripts\updatePierceBullet.gml</script>
         </scripts>
       </scripts>
     </scripts>
@@ -175,6 +185,7 @@
       <object>objects\Tower_0</object>
       <object>objects\HeavyTower</object>
       <object>objects\SniperTower</object>
+      <object>objects\SplitterTower</object>
     </objects>
     <objects name="Creeps">
       <object>objects\Creep_0</object>
@@ -182,6 +193,7 @@
     <objects name="Projectiles">
       <object>objects\simpleBullet</object>
       <object>objects\heavyBullet</object>
+      <object>objects\pierceBullet</object>
     </objects>
     <object>objects\edge</object>
     <objects name="InGameGUI">

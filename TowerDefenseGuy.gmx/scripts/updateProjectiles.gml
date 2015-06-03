@@ -11,6 +11,7 @@ for(var i = 0; i < listSize; i++)
         {
             case OB_Game.SIMPLE_BULLET : if(updateSimpleBullet(bulletID) == 0) {i--; listSize--}; break;
             case OB_Game.HEAVY_BULLET : if (updateHeavyBullet(bulletID) == 0) {i--; listSize--}; break;
+            case OB_Game.PIERCE_BULLET : if (updatePierceBullet(bulletID) == 0) {i--; listSize--}; break;
         }
     }
 }

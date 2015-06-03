@@ -6,5 +6,5 @@ Grid.gridContent[myGridX, myGridY] = myType;
 
 myNextShotTime = 0;
 myReloadTime = 1000; // ms
-myDamage = 2;
+myDamage = 3;
 myRange = 4*Grid.gridPixelSize;
