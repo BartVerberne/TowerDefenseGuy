@@ -25,8 +25,11 @@
       </sprites>
       <sprites name="SniperTower">
         <sprite>sprites\Sniper_0_turret</sprite>
+        <sprite>sprites\Sniper_0_base</sprite>
         <sprite>sprites\Sniper_1_turret</sprite>
+        <sprite>sprites\Sniper_1_base</sprite>
         <sprite>sprites\Sniper_2_turret</sprite>
+        <sprite>sprites\Sniper_2_base</sprite>
       </sprites>
       <sprites name="SplitterTower">
         <sprite>sprites\Splitter_0_base</sprite>
