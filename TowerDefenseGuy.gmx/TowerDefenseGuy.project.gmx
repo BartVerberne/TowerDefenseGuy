@@ -71,6 +71,7 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\resetGame.gml</script>
     <script>scripts\initGame.gml</script>
     <script>scripts\updateGame.gml</script>
     <script>scripts\poinstLineDist.gml</script>

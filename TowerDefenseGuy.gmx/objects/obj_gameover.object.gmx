@@ -91,9 +91,7 @@
     global.nlives = global.startingLives;
     
 
-    resetCreeps();
-    resetTowers();
-    resetProjectiles();
+    resetGame();
 }
 </string>
           </argument>
