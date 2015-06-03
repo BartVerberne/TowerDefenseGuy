@@ -17,3 +17,11 @@ myNextShotTime = 0;
 myReloadTime = 400; // ms
 myDamage = 5;
 myRange = 150;
+myTurretId = instance_create(x + Grid.halfPixelSize, y + Grid.halfPixelSize, Tower_0_turret);
+
+with(myTurretId)
+{
+    depth = -2;
+    image_angle = 0;
+}
+

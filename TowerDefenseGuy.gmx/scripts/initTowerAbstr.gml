@@ -6,6 +6,11 @@ Grid.gridIds[myGridX, myGridY] = id;
 
 myType = 0;
 
+
+// optional override:
+
+myTurretId = 0;
+
 // set 
 //      Grid.gridContent[myGridX, myGridY] 
 // to 

@@ -1,4 +1,5 @@
 gridPixelSize = 32;
+halfPixelSize = gridPixelSize / 2;
 gridWidth = room_width / gridPixelSize;
 gridHeight = room_height / gridPixelSize;
 
