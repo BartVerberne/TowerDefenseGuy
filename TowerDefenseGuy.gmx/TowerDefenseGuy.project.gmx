@@ -197,6 +197,8 @@
       <object>objects\SniperTower</object>
       <object>objects\SplitterTower</object>
       <object>objects\Tower_0_turret</object>
+      <object>objects\SniperTurret</object>
+      <object>objects\HeavyTurret</object>
     </objects>
     <objects name="Creeps">
       <object>objects\Creep_0</object>

@@ -30,18 +30,20 @@ with(tID)
         }
     }
     
-    // aim turret
-    var tX = x;
-    var tY = y;
-    var cX;
-    var cY;
-    with(creepTargetID) {
-        cX = x;
-        cY = y;
-    }
-    
-    with(myTurretId)
-    {   
-        image_angle = point_direction(tX, tY, cX, cY) - 90;
+    if (creepTargetID != 0) {
+        // aim turret
+        var tX = x;
+        var tY = y;
+        var cX;
+        var cY;
+        with(creepTargetID) {
+            cX = x;
+            cY = y;
+        }
+        
+        with(myTurretId)
+        {   
+            image_angle = point_direction(tX, tY, cX, cY) - 90;
+        }
     }
 }

@@ -3,7 +3,7 @@ if (!global.gameover) {
 var time = get_timer();
 
 var queueSize = ds_queue_size(moveQueue);
-if (queueSize < 5)  
+if (queueSize < 2)  
 {
     var Wpressed = keyboard_check_pressed(ord('W')) || (keyboard_check(ord('W')) && queueSize == 0);
     var Apressed = keyboard_check_pressed(ord('A')) || (keyboard_check(ord('A')) && queueSize == 0);
