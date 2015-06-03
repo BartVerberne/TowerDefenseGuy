@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\hitmarker</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\sprite2</sprite>
