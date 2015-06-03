@@ -105,6 +105,7 @@
       <script>scripts\pixelDistToPlayerPxPy.gml</script>
     </scripts>
     <scripts name="Towers">
+      <script>scripts\initTowers.gml</script>
       <script>scripts\updateTowers.gml</script>
       <script>scripts\upgradeTower.gml</script>
       <script>scripts\resetTowers.gml</script>

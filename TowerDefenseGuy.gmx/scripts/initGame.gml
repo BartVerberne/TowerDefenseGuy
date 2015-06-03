@@ -3,6 +3,7 @@ with(Player) initPlayer();
 
 initProjectiles();
 initCreeps();
+initTowers();
 
 firstRun = true;
 selectedTowerType = Grid.GRID_TOWER_0;
