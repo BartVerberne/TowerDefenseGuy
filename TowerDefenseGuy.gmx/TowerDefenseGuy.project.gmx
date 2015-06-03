@@ -184,6 +184,12 @@
       <object>objects\heavyBullet</object>
     </objects>
     <object>objects\edge</object>
+    <objects name="InGameGUI">
+      <object>objects\obj_score</object>
+      <object>objects\obj_lives</object>
+      <object>objects\obj_gold</object>
+    </objects>
+    <object>objects\obj_gameover</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
