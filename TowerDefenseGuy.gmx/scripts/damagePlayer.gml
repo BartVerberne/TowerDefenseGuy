@@ -7,4 +7,3 @@ if(global.nlives == 0){ //if lives = 0
         global.gameover = 1; //gameover
     }
 }
-

@@ -24,4 +24,3 @@ with(myTurretId)
     depth = -2;
     image_angle = 0;
 }
-
