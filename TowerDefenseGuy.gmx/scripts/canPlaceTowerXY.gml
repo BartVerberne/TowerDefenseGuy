@@ -1,6 +1,10 @@
 var xS = argument0;
 var yS = argument1;
 
+var pX = getPlayerNextX();
+var pY = getPlayerNextY();
+
+if (!(xS = pX && yS == pY))
 if (isGridFreeXYB(xS, yS, false) && ds_list_size(creepBlock[xS, yS]) == 0)
 {
     var allowed = true;

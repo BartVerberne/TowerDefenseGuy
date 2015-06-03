@@ -71,13 +71,14 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\resetGame.gml</script>
     <script>scripts\initGame.gml</script>
+    <script>scripts\resetGame.gml</script>
     <script>scripts\updateGame.gml</script>
     <script>scripts\poinstLineDist.gml</script>
     <script>scripts\ClickDebug.gml</script>
     <scripts name="Grid">
       <script>scripts\initGrid.gml</script>
+      <script>scripts\resetGrid.gml</script>
       <script>scripts\isGridFreeXYB.gml</script>
       <script>scripts\gridClickedRight.gml</script>
       <script>scripts\gridClicked.gml</script>
