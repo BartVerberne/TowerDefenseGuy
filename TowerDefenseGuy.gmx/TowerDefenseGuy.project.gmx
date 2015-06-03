@@ -13,15 +13,31 @@
         <sprite>sprites\Tower_0_lvl1</sprite>
         <sprite>sprites\Tower_0_lvl0</sprite>
       </sprites>
-      <sprites name="Tower_1">
-        <sprite>sprites\Tower_1_1_base</sprite>
-        <sprite>sprites\Tower_1_1_turret</sprite>
-        <sprite>sprites\Tower_1_2_base</sprite>
-        <sprite>sprites\Tower_1_2_turret</sprite>
+      <sprites name="BasicTower">
+        <sprite>sprites\Basic_0_base</sprite>
+        <sprite>sprites\Basic_0_turret</sprite>
+        <sprite>sprites\Basic_1_base</sprite>
+        <sprite>sprites\Basic_1_turret</sprite>
+        <sprite>sprites\Basic_2_base</sprite>
+        <sprite>sprites\Basic_2_turret</sprite>
       </sprites>
       <sprites name="SniperTower">
-        <sprite>sprites\Sniper_0_base</sprite>
-        <sprite>sprites\Sniper_1_base</sprite>
+        <sprite>sprites\Sniper_0_turret</sprite>
+        <sprite>sprites\Sniper_1_turret</sprite>
+        <sprite>sprites\Sniper_2_turret</sprite>
+      </sprites>
+      <sprites name="SplitterTower">
+        <sprite>sprites\Splitter_0_base</sprite>
+        <sprite>sprites\Splitter_1_base</sprite>
+        <sprite>sprites\Splitter_2_base</sprite>
+      </sprites>
+      <sprites name="HeavyTower">
+        <sprite>sprites\Heavy_0_base</sprite>
+        <sprite>sprites\Heavy_0_turret</sprite>
+        <sprite>sprites\Heavy_1_base</sprite>
+        <sprite>sprites\Heavy_1_turret</sprite>
+        <sprite>sprites\Heavy_2_base</sprite>
+        <sprite>sprites\Heavy_2_turret</sprite>
       </sprites>
     </sprites>
     <sprites name="Player">
