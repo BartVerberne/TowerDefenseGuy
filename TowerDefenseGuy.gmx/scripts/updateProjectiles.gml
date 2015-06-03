@@ -2,6 +2,7 @@
 var projList = OB_Game.allProjectiles
 var listSize = ds_list_size(projList);
 
+if (!global.gameover) 
 for(var i = 0; i < listSize; i++)
 {
     var bulletID = ds_list_find_value(projList, i);
@@ -15,3 +16,4 @@ for(var i = 0; i < listSize; i++)
         }
     }
 }
+

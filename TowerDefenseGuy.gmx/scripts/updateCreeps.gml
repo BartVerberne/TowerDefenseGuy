@@ -8,6 +8,7 @@ var gridPathsXdir = Grid.gridPathsXdir;
 var gridPathsYdir = Grid.gridPathsYdir;
 var gridPixelSize = Grid.gridPixelSize;
 
+if (!global.gameover) 
 for(var i = 0; i < listSize; i++)
 {
     with(ds_list_find_value(creepList, i))

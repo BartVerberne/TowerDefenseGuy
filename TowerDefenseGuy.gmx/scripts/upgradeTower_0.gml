@@ -2,13 +2,18 @@ var towerID = argument0;
 
 with (towerID)
 {
-    switch (myLevel) {
-        case 0 : sprite_index = Tower_0_lvl1; break;
+
+    if (myLevel == 1)
+    {   
+        sprite_index = Basic_1_base;
+        myDamage = 5;
+    }
+    else 
+    {
+        sprite_index = Basic_2_base;   
+        myDamage = 10;
     }
     
+    
     sprite_set_offset(sprite_index,0,0);
-
-    myDamage = 8;
-    myReloadTime = 700;
-    myRange = 250;
 }

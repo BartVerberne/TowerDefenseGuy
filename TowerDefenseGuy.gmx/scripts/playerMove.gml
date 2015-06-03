@@ -1,4 +1,4 @@
-
+if (!global.gameover) {
 
 var time = get_timer();
 
@@ -90,4 +90,6 @@ else
 {
     progress = 1;
     progressCarry = 0;
+}
+
 }

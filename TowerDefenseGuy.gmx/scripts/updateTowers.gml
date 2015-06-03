@@ -1,3 +1,4 @@
+if (!global.gameover) 
 with (Grid)
 {
     for (var cY = 0; cY < gridHeight; cY++) {

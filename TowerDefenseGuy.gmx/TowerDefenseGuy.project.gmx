@@ -63,6 +63,7 @@
     </sprites>
     <sprite>sprites\sprite17</sprite>
     <sprite>sprites\sprite18</sprite>
+    <sprite>sprites\sprite33</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Tileset</background>
@@ -103,10 +104,12 @@
     <scripts name="Towers">
       <script>scripts\updateTowers.gml</script>
       <script>scripts\upgradeTower.gml</script>
+      <script>scripts\resetTowers.gml</script>
       <script>scripts\addTowerXYT.gml</script>
       <scripts name="TowerAbstract">
         <script>scripts\initTowerAbstr.gml</script>
         <script>scripts\getFurthestCreepInRangeXYR.gml</script>
+        <script>scripts\deleteTower.gml</script>
       </scripts>
       <scripts name="Tower_0">
         <script>scripts\initTower_0.gml</script>
@@ -145,9 +148,11 @@
       <scripts name="Creep_0">
         <script>scripts\initCreep_0.gml</script>
       </scripts>
+      <script>scripts\resetCreeps.gml</script>
     </scripts>
     <scripts name="Projectiles">
       <script>scripts\initProjectiles.gml</script>
+      <script>scripts\resetProjectiles.gml</script>
       <script>scripts\updateProjectiles.gml</script>
       <scripts name="ProjectileAbstract">
         <script>scripts\initProjAbstr.gml</script>

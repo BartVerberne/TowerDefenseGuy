@@ -86,14 +86,14 @@
             <kind>1</kind>
             <string>if (global.gameover) {
     global.gameover = 0; //set gameover to initial value 0
-    //reset initial gamestate
     global.points = 0;
-    global.gold = 50;
-    global.nlives = 3;
+    global.gold = global.startingGold;
+    global.nlives = global.startingLives;
     
-    //un-freeze
-    
-    //instance_activate_all();
+
+    resetCreeps();
+    resetTowers();
+    resetProjectiles();
 }
 </string>
           </argument>

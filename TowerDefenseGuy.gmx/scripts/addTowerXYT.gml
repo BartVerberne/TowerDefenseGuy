@@ -2,6 +2,7 @@ var gridX = argument0;
 var gridY = argument1;
 var towerType = argument2;
 
+if (!global.gameover) 
 if (isGridFreeXYB(gridX,gridY, false))
 {
     var toPlaceObject = 0;

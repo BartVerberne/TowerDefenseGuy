@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.nlives = 3; //initial number of lives
+            <string>global.startingLives = 3;
+global.nlives = global.startingLives; //initial number of lives
 </string>
           </argument>
         </arguments>

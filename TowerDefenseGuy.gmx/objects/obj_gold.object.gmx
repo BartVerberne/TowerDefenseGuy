@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.gold = 50; //initial gold
+            <string>global.startingGold = 50;
+global.gold = global.startingGold; //initial gold
 </string>
           </argument>
         </arguments>
