@@ -2,6 +2,7 @@ var towerID = argument0;
 
 with (towerID)
 {
+     myLevel++;
 
     if (myLevel == 1)
     {   

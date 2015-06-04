@@ -110,9 +110,9 @@
     <scripts name="Towers">
       <script>scripts\initTowers.gml</script>
       <script>scripts\updateTowers.gml</script>
-      <script>scripts\upgradeTower.gml</script>
       <script>scripts\resetTowers.gml</script>
       <script>scripts\addTowerXYT.gml</script>
+      <script>scripts\upgradeTower.gml</script>
       <scripts name="TowerAbstract">
         <script>scripts\initTowerAbstr.gml</script>
         <script>scripts\getFurthestCreepInRangeXYR.gml</script>
