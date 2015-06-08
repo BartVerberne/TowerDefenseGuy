@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(GuiF1);
+            <string>draw_set_font(Arcade);
 draw_set_color(global.keyColor);
 draw_text(x,y,"Shortcut: ");
 </string>

@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-5</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -51,15 +51,16 @@
             <string>if (global.gameover) {
     //freeze everything
     //instance_deactivate_all(true);
+    draw_set_font(Arcade);
     draw_set_color(c_black); //bg color
     draw_set_alpha(0.5); //50% transparency
     draw_rectangle(0,0,room_width,room_height,0);
     draw_set_halign(fa_center);
     draw_set_color(c_white); //text color
     draw_set_alpha(1); //100% transparency
-    draw_text(room_width/2,(room_height/2)-64,"Total Score " + string(global.points));
-    draw_text(room_width/2,room_height/2,"Game Over");
-    draw_text(room_width/2,(room_height/2)+64,"Press SPACE to Try Again");
+    draw_text_transformed(room_width/2,(room_height/2)-128,"Total  Score   " + string(global.points), 3,3,0);
+    draw_text_transformed(room_width/2,room_height/2,"Game  Over", 3,3,0);
+    draw_text_transformed(room_width/2,(room_height/2)+128,"Press  SPACE  to  Try  Again", 3,3,0);
     draw_set_color(c_black);
     draw_set_halign(fa_left);
 }
