@@ -1,7 +1,7 @@
 
-fChance = 0.001;
-
 with(OB_Game) {
+
+    fChance = 0.001;
 
     if (!firstRun) {
         resetCreeps();

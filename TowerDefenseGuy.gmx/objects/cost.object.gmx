@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_yellow); //set text color to red
-draw_text(x,y,"Cost:");
+            <string>draw_set_font(GuiF1);
+draw_set_color(global.goldColor); //set text color to red
+draw_text(x,y,"Cost: ");
 </string>
           </argument>
         </arguments>

@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>draw_sprite(sprite_index, image_index, x, y);
+draw_set_color(global.goldColor); 
 draw_text(x,y-32,OB_Game.splittergoldupgrade[0]);
 </string>
           </argument>

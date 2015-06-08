@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.startingGold = 200;
-global.gold = global.startingGold; //initial gold
+global.gold = global.startingGold; //initial number of lives
 </string>
           </argument>
         </arguments>
@@ -49,8 +49,9 @@ global.gold = global.startingGold; //initial gold
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_yellow); //set text color to yellow
-draw_text(32,room_height,"Gold:"+string(global.gold)); //draw score
+            <string>draw_set_font(GuiF1);
+draw_set_color(global.goldColor); //set text color to yellow
+draw_text(32,room_height,"Gold: "+string(global.gold)); //draw score
 </string>
           </argument>
         </arguments>
