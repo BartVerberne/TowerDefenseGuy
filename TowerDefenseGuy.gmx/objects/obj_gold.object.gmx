@@ -49,7 +49,7 @@ global.gold = global.startingGold; //initial number of lives
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(GuiF1);
+            <string>draw_set_font(Arcade);
 draw_set_color(global.goldColor); //set text color to yellow
 draw_text(32,room_height,"Gold: "+string(global.gold)); //draw score
 </string>

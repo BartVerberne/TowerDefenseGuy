@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(GuiF1);
+            <string>draw_set_font(Arcade);
 draw_set_color(c_white); //set text color to white
 draw_text((room_width/2)-64,room_height,"Score: "+string(global.points)); //draw score
 </string>

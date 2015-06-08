@@ -190,8 +190,9 @@
     </scripts>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\FpsFont</font>
+    <font>fonts\Arcade</font>
     <font>fonts\GuiF1</font>
+    <font>fonts\FpsFont</font>
   </fonts>
   <objects name="objects">
     <object>objects\OB_Game</object>
