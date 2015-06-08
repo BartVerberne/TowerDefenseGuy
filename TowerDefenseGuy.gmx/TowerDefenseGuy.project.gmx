@@ -116,6 +116,7 @@
       <script>scripts\upgradeTower.gml</script>
       <scripts name="TowerAbstract">
         <script>scripts\initTowerAbstr.gml</script>
+        <script>scripts\isCreepInRangeXYR.gml</script>
         <script>scripts\getFurthestCreepInRangeXYR.gml</script>
         <script>scripts\deleteTower.gml</script>
       </scripts>
@@ -171,6 +172,7 @@
         <scripts name="targetProjAbstr">
           <script>scripts\initTargetProjAbstr.gml</script>
           <script>scripts\setBulletStats.gml</script>
+          <script>scripts\setBulletStatsNoCreep.gml</script>
         </scripts>
         <scripts name="SimpleBullet">
           <script>scripts\initSimpleBullet.gml</script>
