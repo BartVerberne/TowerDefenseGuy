@@ -67,6 +67,7 @@
     <sprite>sprites\sprite17</sprite>
     <sprite>sprites\sprite18</sprite>
     <sprite>sprites\sprite33</sprite>
+    <sprite>sprites\sprite37</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Tileset</background>
@@ -217,6 +218,20 @@
       <object>objects\obj_score</object>
       <object>objects\obj_lives</object>
       <object>objects\obj_gold</object>
+      <object>objects\key</object>
+      <object>objects\cost</object>
+      <object>objects\tower11</object>
+      <object>objects\tower12</object>
+      <object>objects\tower13</object>
+      <object>objects\tower21</object>
+      <object>objects\tower22</object>
+      <object>objects\tower23</object>
+      <object>objects\tower31</object>
+      <object>objects\tower32</object>
+      <object>objects\tower33</object>
+      <object>objects\tower41</object>
+      <object>objects\tower42</object>
+      <object>objects\tower43</object>
     </objects>
     <object>objects\obj_gameover</object>
   </objects>

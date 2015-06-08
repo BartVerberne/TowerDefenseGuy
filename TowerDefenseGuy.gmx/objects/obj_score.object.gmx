@@ -31,7 +31,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,7 +49,7 @@
           <argument>
             <kind>1</kind>
             <string>draw_set_color(c_white); //set text color to white
-draw_text(320,32,global.points); //draw score
+draw_text((room_width/2)-64,room_height,"Score:"+string(global.points)); //draw score
 </string>
           </argument>
         </arguments>

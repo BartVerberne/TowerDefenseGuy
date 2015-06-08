@@ -8,30 +8,6 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.startingGold = 200;
-global.gold = global.startingGold; //initial gold
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
@@ -49,8 +25,8 @@ global.gold = global.startingGold; //initial gold
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_yellow); //set text color to yellow
-draw_text(32,room_height,"Gold:"+string(global.gold)); //draw score
+            <string>draw_set_color(c_blue); //set text color to red
+draw_text(x,y,"Keyboard shortcut:");
 </string>
           </argument>
         </arguments>

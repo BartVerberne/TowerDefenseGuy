@@ -32,7 +32,7 @@ global.nlives = global.startingLives; //initial number of lives
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -50,7 +50,7 @@ global.nlives = global.startingLives; //initial number of lives
           <argument>
             <kind>1</kind>
             <string>draw_set_color(c_red); //set text color to red
-draw_text(960,32,global.nlives); //draw score
+draw_text(room_width-128,room_height,"Lives:"+string(global.nlives)); //draw score
 </string>
           </argument>
         </arguments>
