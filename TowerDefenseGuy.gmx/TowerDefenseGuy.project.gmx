@@ -86,11 +86,11 @@
     <scripts name="Grid">
       <script>scripts\initGrid.gml</script>
       <script>scripts\resetGrid.gml</script>
-      <script>scripts\isGridFreeXYB.gml</script>
       <script>scripts\gridClickedRight.gml</script>
       <script>scripts\gridClicked.gml</script>
       <script>scripts\isGridTowerXY.gml</script>
       <script>scripts\canPlaceTowerXY.gml</script>
+      <script>scripts\isGridFreeXYB.gml</script>
     </scripts>
     <scripts name="PathFinder">
       <scripts name="BlockingTest">
@@ -159,6 +159,9 @@
       <scripts name="Creep_0">
         <script>scripts\initCreep_0.gml</script>
       </scripts>
+      <scripts name="Creep_1">
+        <script>scripts\initCreep_1.gml</script>
+      </scripts>
       <script>scripts\resetCreeps.gml</script>
     </scripts>
     <scripts name="Projectiles">
@@ -213,6 +216,7 @@
     </objects>
     <objects name="Creeps">
       <object>objects\Creep_0</object>
+      <object>objects\Creep_1</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\simpleBullet</object>

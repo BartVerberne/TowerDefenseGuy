@@ -16,7 +16,7 @@ for(var i = 0; i < listSize; i++)
         // check end
         if (pixelDistToPlayerPxPy(x, y) < myPlayerReachTreshold) 
         {
-            damagePlayer(myDamage);
+            damagePlayer();
             
             ds_list_delete( creepBlock[myGridX + curDirX, myGridY + curDirY], 
                                 ds_list_find_index(creepBlock[myGridX + curDirX, myGridY + curDirY], id));
@@ -64,11 +64,14 @@ for(var i = 0; i < listSize; i++)
             
             // Some creep specific behaviour:
         
-            if (myType == OB_Game.CREEP_0)
+            if (myType == global.CREEP_0)
             {
-                // nothing special yet
+                //...
             }
-            else { // add other creep types
+            else if (myType == global.CREEP_1) {
+                //...
+            }
+            else {
                 //...
             }
         }

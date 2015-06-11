@@ -5,6 +5,6 @@ myLevel = 0;
 Grid.gridContent[myGridX, myGridY] = myType;
 
 myNextShotTime = 0;
-myReloadTime = 300; // ms
-myDamage = 4;
-myRange = 4*Grid.gridPixelSize;
+myReloadTime = OB_Game.splitterTowerReloadTime; // ms
+myDamage = OB_Game.splitterTowerDamage;
+myRange = OB_Game.splitterTowerRange;

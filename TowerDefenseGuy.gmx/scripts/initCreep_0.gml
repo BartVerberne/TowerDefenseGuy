@@ -1,14 +1,14 @@
 initCreepAbstr();
 
 // override variables:
-myHealthMax = 60;
+myType = global.CREEP_0;
+myHealthMax = global.Creep_0_health;
 myHealth = myHealthMax;
-mySpeed = 3.5;
-myType = OB_Game.CREEP_0;
-myDamage = 10;
-myScore = 50;
-myGold = 30; //gold creep gives
-myPlayerReachTreshold = Grid.gridPixelSize / 2.0;
+mySpeed = global.Creep_0_speed;
+
+myScore = global.Creep_0_score;
+myGold = global.Creep_0_gold; //gold creep gives
+myPlayerReachTreshold = global.Creep_0_player_treshold;
 
 // specific for this creep:
 // ...

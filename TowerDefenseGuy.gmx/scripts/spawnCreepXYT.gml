@@ -8,7 +8,8 @@ if (isGridFreeXYB(gridX, gridY, true))
     var toPlaceObject = 0;
         
     switch(creepType) {
-        case OB_Game.CREEP_0 : toPlaceObject = Creep_0; break;
+        case global.CREEP_0 : toPlaceObject = Creep_0; break;
+        case global.CREEP_1 : toPlaceObject = Creep_1; break;
     }
     
     if (toPlaceObject != 0)

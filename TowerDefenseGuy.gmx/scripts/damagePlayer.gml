@@ -1,4 +1,4 @@
-var damage = argument0;
+
 if(global.nlives > 0) { //if you still have lives
     global.nlives -= 1; //reduce lives by 1
 }

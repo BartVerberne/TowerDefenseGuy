@@ -14,9 +14,9 @@ Grid.gridContent[myGridX, myGridY] = myType;
 // it can hit targets besides the original target
 
 myNextShotTime = 0;
-myReloadTime = 400; // ms
-myDamage = 5;
-myRange = 150;
+myReloadTime = OB_Game.baseTowerReloadTime; // ms
+myDamage = OB_Game.baseTowerDamage;
+myRange = OB_Game.baseTowerRange;
 myTurretId = instance_create(x + Grid.halfPixelSize, y + Grid.halfPixelSize, Tower_0_turret);
 
 with(myTurretId)
