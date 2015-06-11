@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\hitmarker</sound>
+    <sound>sound\bgm_ingame</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite1</sprite>
