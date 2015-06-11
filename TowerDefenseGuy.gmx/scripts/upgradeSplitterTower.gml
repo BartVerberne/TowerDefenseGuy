@@ -7,13 +7,15 @@ with (towerID)
     if (myLevel == 1)
     {   
         sprite_index = Splitter_1_base;
-        myDamage = 8;
     }
     else 
     {
         sprite_index = Splitter_2_base;   
-        myDamage = 16;
     }
+    
+    myReloadTime = OB_Game.splitterTowerReloadTime[myLevel]; // ms
+    myDamage = OB_Game.splitterTowerDamage[myLevel];
+    myRange = OB_Game.splitterTowerRange[myLevel];
     
     sprite_set_offset(sprite_index,0,0);
     

@@ -40,11 +40,17 @@ if (queueSize < 2)
 if (!inMove) {
     if (ds_queue_size(moveQueue) > 0) {
         var found = false;
+        var foundStepDir;
+        var foundStepType;
+        
         while(!found && ds_queue_size(moveQueue) > 0)
         {
-            if (ds_queue_head(moveQueue) == X_STEP)          
-                 found = isGridFreeXYB(myGridX + ds_queue_head(moveQueueDir), myGridY, false);
-            else found = isGridFreeXYB(myGridX, myGridY + ds_queue_head(moveQueueDir), false);
+            foundStepDir = ds_queue_head(moveQueueDir);
+            foundStepType = ds_queue_head(moveQueue);
+        
+            if (foundStepType == X_STEP)          
+                 found = isGridFreeXYB(myGridX + foundStepDir, myGridY, false);
+            else found = isGridFreeXYB(myGridX, myGridY + foundStepDir, false);
             
             if (!found)
             {
@@ -57,13 +63,24 @@ if (!inMove) {
             nextXstepTime = time + stepInterval;
             inMove = true;
             setPaths();
+            
+            if (foundStepType == X_STEP) {
+                if (foundStepDir > 0) image_index = 2;
+                else image_index = 1;
+            }
+            else {
+                if (foundStepDir > 0) image_index = 3;
+                else image_index = 0;
+            }
         }
     }
 }
 
 if (inMove) {
     progress = 1.0 - (nextXstepTime - time) / stepInterval + progressCarry;
-    if (ds_queue_head(moveQueue) == X_STEP) {
+    var stepType = ds_queue_head(moveQueue);
+    var stepDir = ds_queue_head(moveQueueDir);
+    if (stepType == X_STEP) {
         if (progress > 0.999) {
             progressCarry = progress - 1;//(time - nextXstepTime) / stepInterval;
             ds_queue_dequeue(moveQueue);
@@ -71,7 +88,9 @@ if (inMove) {
             x = myGridX * Grid.gridPixelSize;
             inMove = false; 
         }
-        else x = (myGridX + progress * ds_queue_head(moveQueueDir)) * Grid.gridPixelSize;       
+        else {
+            x = (myGridX + progress * stepDir) * Grid.gridPixelSize;    
+        }    
     }
     else {
         if (progress > 0.999)
@@ -83,7 +102,9 @@ if (inMove) {
             y = myGridY * Grid.gridPixelSize;      
             setPaths();
         }
-        else y = (myGridY + progress * ds_queue_head(moveQueueDir)) * Grid.gridPixelSize;   
+        else {
+            y = (myGridY + progress * stepDir) * Grid.gridPixelSize;   
+        }
     }
 }
 else 

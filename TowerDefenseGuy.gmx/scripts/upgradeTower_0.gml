@@ -8,15 +8,16 @@ with (towerID)
     {   
         sprite_index = Basic_1_base;
         with (myTurretId) sprite_index = Basic_1_turret;
-        myDamage = 5;
     }
     else 
     {
         sprite_index = Basic_2_base;
         with (myTurretId) sprite_index = Basic_2_turret;
-        myDamage = 10;
     }
     
+    myReloadTime = OB_Game.splitterTowerReloadTime[myLevel]; // ms
+    myDamage = OB_Game.splitterTowerDamage[myLevel];
+    myRange = OB_Game.splitterTowerRange[myLevel];
     
     sprite_set_offset(sprite_index,0,0);
 }

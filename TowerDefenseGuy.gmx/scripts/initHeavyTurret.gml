@@ -5,9 +5,9 @@ myLevel = 0;
 Grid.gridContent[myGridX, myGridY] = myType;
 
 myNextShotTime = 0;
-myReloadTime = OB_Game.heavyTowerReloadTime; // ms
-myDamage = OB_Game.heavyTowerDamage;
-myRange = OB_Game.heavyTowerRange;
+myReloadTime = OB_Game.heavyTowerReloadTime[0]; // ms
+myDamage = OB_Game.heavyTowerDamage[0];
+myRange = OB_Game.heavyTowerRange[0];
 
 myTurretId = instance_create(x + Grid.halfPixelSize, y + Grid.halfPixelSize, HeavyTurret);
 

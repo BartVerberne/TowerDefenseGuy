@@ -4,6 +4,9 @@ myGridY = 4;
 X_STEP = 0;
 Y_STEP = 1;
 
+image_speed = 0;
+image_index = 3;
+
 stepInterval = 180 * 1000; // in microseconds
 nextXstepTime = 0;
 progress = 0;
