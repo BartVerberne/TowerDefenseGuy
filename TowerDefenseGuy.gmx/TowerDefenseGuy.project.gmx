@@ -245,7 +245,7 @@
       <object>objects\obj_lives</object>
       <object>objects\obj_gold</object>
       <object>objects\damageGUI</object>
-      <object>objects\cost</object>
+      <object>objects\costGUI</object>
       <object>objects\tower11</object>
       <object>objects\tower21</object>
       <object>objects\tower31</object>

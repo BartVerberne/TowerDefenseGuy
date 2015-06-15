@@ -58,14 +58,13 @@
     <instance objName="obj_lives" x="672" y="-64" name="inst_E8039574" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gold" x="352" y="-64" name="inst_3232B2DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gameover" x="256" y="-64" name="inst_DB885E48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="tower21" x="512" y="832" name="inst_4C2CD7BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="tower31" x="736" y="832" name="inst_B0D1CC4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="tower41" x="960" y="832" name="inst_93EBB58C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="tower11" x="288" y="832" name="inst_43DCF824" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cost" x="32" y="800" name="inst_7F20EFC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cost" x="32" y="800" name="inst_16966551" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="damageGUI" x="32" y="832" name="inst_396BE5AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="reloadGUI" x="32" y="864" name="inst_8299B95C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="tower11" x="224" y="832" name="inst_88942DFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="tower21" x="480" y="832" name="inst_6E5B8F13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="tower31" x="736" y="832" name="inst_353A2680" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="tower41" x="992" y="832" name="inst_4C0D6D52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="costGUI" x="32" y="800" name="inst_AB519C44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="damageGUI" x="32" y="832" name="inst_2B0E0B13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="reloadGUI" x="32" y="864" name="inst_7A59B4C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>draw_set_font(Arcade);
 draw_set_color(global.damageColor);
-draw_text(x,y,"Damage");
+draw_text(x,y+16,"Damage");
 </string>
           </argument>
         </arguments>

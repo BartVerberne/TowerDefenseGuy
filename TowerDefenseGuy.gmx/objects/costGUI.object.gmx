@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>draw_set_font(Arcade);
 draw_set_color(global.goldColor); //set text color to red
-draw_text(x,y,"Cost: ");
+draw_text(x,y+16,"Cost: ");
 </string>
           </argument>
         </arguments>
