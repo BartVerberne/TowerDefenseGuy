@@ -70,6 +70,7 @@
     <sprite>sprites\sprite33</sprite>
     <sprite>sprites\sprite37</sprite>
     <sprite>sprites\spr_cow</sprite>
+    <sprite>sprites\sprite39</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Tileset</background>
