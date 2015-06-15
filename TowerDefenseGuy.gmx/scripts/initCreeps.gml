@@ -15,5 +15,10 @@ global.CREEP_1 = 1;
 global.Creep_1_speed = 4.0;
 global.Creep_1_health = 50;
 global.Creep_1_score = 60;
+<<<<<<< HEAD
+global.Creep_1_gold = 60;
+global.Creep_1_player_treshold = Grid.gridPixelSize / 2.0;
+=======
 global.Creep_1_gold = 20;
 global.Creep_1_player_treshold = Grid.gridPixelSize / 2.0;
+>>>>>>> updated gui
