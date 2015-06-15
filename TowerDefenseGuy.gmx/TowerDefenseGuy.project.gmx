@@ -8,6 +8,11 @@
     <sound>sound\hitmarker</sound>
     <sound>sound\bgm_ingame</sound>
     <sound>sound\snd_Basicturret</sound>
+    <sound>sound\snd_Sniperturret</sound>
+    <sound>sound\snd_Splitterturret</sound>
+    <sound>sound\snd_Heavyturret</sound>
+    <sound>sound\snd_Enemygettinghit</sound>
+    <sound>sound\snd_Gettinghit</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite1</sprite>
