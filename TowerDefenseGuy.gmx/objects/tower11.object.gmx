@@ -29,10 +29,22 @@
 draw_sprite(sprite_index, image_index, x, y);
 
 draw_set_color(global.goldColor); 
-draw_text(x,y-32,OB_Game.basegold);
+draw_text(x+64,y-32,OB_Game.basegold);
+draw_text(x+128,y-32,OB_Game.basegoldupgrade[0]);
+draw_text(x+192,y-32,OB_Game.basegoldupgrade[1]);
+
+draw_set_color(global.reloadColor); 
+draw_text(x+64,y+32,OB_Game.baseTowerReloadTime[0]/10);
+draw_text(x+128,y+32,OB_Game.baseTowerReloadTime[1]/10);
+draw_text(x+192,y+32,OB_Game.baseTowerReloadTime[2]/10);
+
+draw_set_color(global.damageColor); 
+draw_text(x+64,y,OB_Game.baseTowerDamage[0]);
+draw_text(x+128,y,OB_Game.baseTowerDamage[1]);
+draw_text(x+192,y,OB_Game.baseTowerDamage[2]);
 
 draw_set_color(global.keyColor);
-draw_text(x,y+32,"1");
+draw_text(x+8,y+32,"1");
 
 </string>
           </argument>

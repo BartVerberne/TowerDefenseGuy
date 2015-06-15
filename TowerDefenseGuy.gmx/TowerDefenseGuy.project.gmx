@@ -244,20 +244,13 @@
       <object>objects\obj_score</object>
       <object>objects\obj_lives</object>
       <object>objects\obj_gold</object>
-      <object>objects\key</object>
+      <object>objects\damageGUI</object>
       <object>objects\cost</object>
       <object>objects\tower11</object>
-      <object>objects\tower12</object>
-      <object>objects\tower13</object>
       <object>objects\tower21</object>
-      <object>objects\tower22</object>
-      <object>objects\tower23</object>
       <object>objects\tower31</object>
-      <object>objects\tower32</object>
-      <object>objects\tower33</object>
       <object>objects\tower41</object>
-      <object>objects\tower42</object>
-      <object>objects\tower43</object>
+      <object>objects\reloadGUI</object>
     </objects>
     <object>objects\obj_gameover</object>
     <object>objects\object35</object>
