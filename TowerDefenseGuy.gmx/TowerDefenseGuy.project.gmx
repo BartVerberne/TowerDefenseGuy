@@ -253,7 +253,10 @@
       <object>objects\tower43</object>
     </objects>
     <object>objects\obj_gameover</object>
-    <object>objects\obj_start</object>
+    <object>objects\object35</object>
+    <objects name="Start Screen">
+      <object>objects\obj_start</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_screen</room>
