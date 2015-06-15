@@ -1,18 +1,18 @@
 basegold = 20;
 basegoldupgrade[0] = 60;
-basegoldupgrade[1] = 200;
+basegoldupgrade[1] = 150;
 
 heavygold = 50;
-heavygoldupgrade[0] = 120;
+heavygoldupgrade[0] = 150;
 heavygoldupgrade[1] = 250;
 
-snipergold = 70;
-snipergoldupgrade[0] = 150;
-snipergoldupgrade[1] = 310;
+snipergold = 150;
+snipergoldupgrade[0] = 300;
+snipergoldupgrade[1] = 500;
 
-splittergold = 80;
-splittergoldupgrade[0] = 170;
-splittergoldupgrade[1] = 250;
+splittergold = 300;
+splittergoldupgrade[0] = 500;
+splittergoldupgrade[1] = 750;
 
 // Base tower
 baseTowerReloadTime[0] = 400;
