@@ -14,8 +14,6 @@ progressCarry = 0;
 lastStep = Y_STEP;
 inMove = false;
 
-towerPlaceRad = 3;
-
 moveQueue = ds_queue_create();
 moveQueueDir = ds_queue_create();
 

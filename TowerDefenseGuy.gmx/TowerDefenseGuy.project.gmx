@@ -76,14 +76,16 @@
     <sprite>sprites\sprite33</sprite>
     <sprite>sprites\sprite37</sprite>
     <sprite>sprites\spr_cow</sprite>
-    <sprite>sprites\sprite39</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Tileset</background>
     <background>background\background2</background>
     <background>background\background3</background>
+    <background>background\Cow_ab</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\initGame.gml</script>
     <script>scripts\resetGame.gml</script>
@@ -200,6 +202,7 @@
         </scripts>
       </scripts>
     </scripts>
+    <script>scripts\scr_menu.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Arcade</font>
@@ -251,8 +254,10 @@
       <object>objects\tower43</object>
     </objects>
     <object>objects\obj_gameover</object>
+    <object>objects\obj_start</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Start_screen</room>
     <room>rooms\room0</room>
     <room>rooms\Sprite_room</room>
   </rooms>

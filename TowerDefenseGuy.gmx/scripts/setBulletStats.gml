@@ -10,4 +10,3 @@ with(argument0) {
     myDamage = argument2;
     addDistoryListener(argument1, argument0);
 }
-
