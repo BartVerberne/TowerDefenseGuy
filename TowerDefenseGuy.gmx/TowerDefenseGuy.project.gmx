@@ -13,6 +13,8 @@
     <sound>sound\snd_heavyturret</sound>
     <sound>sound\snd_sniperturret</sound>
     <sound>sound\snd_basicturret</sound>
+    <sound>sound\Menus</sound>
+    <sound>sound\Gameover</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite1</sprite>

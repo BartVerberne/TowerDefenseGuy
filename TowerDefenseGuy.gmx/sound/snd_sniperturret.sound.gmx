@@ -18,7 +18,7 @@
     <type>0</type>
   </types>
   <bitDepths>
-    <bitDepth>16</bitDepth>
+    <bitDepth>8</bitDepth>
   </bitDepths>
   <preload>-1</preload>
   <data>snd_sniperturret.wav</data>
