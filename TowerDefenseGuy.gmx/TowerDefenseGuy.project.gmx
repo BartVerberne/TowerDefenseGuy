@@ -63,6 +63,12 @@
       <sprites name="Creep_0">
         <sprite>sprites\Creep_0sprite</sprite>
       </sprites>
+      <sprites name="Creep_1">
+        <sprite>sprites\Creep_1sprite</sprite>
+      </sprites>
+      <sprites name="Creep_2">
+        <sprite>sprites\Creep_2sprite</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\sprite6</sprite>
     <sprite>sprites\sprite7</sprite>
@@ -83,6 +89,7 @@
     <background>background\background2</background>
     <background>background\background3</background>
     <background>background\Cow_ab</background>
+    <background>background\menu_help_control</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
