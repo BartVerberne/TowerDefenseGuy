@@ -76,6 +76,7 @@
     <background>background\Tileset</background>
     <background>background\background2</background>
     <background>background\background3</background>
+    <background>background\Cow_ab</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -194,6 +195,7 @@
         </scripts>
       </scripts>
     </scripts>
+    <script>scripts\scr_menu.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Arcade</font>
@@ -245,8 +247,10 @@
       <object>objects\tower43</object>
     </objects>
     <object>objects\obj_gameover</object>
+    <object>objects\obj_start</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Start_screen</room>
     <room>rooms\room0</room>
     <room>rooms\Sprite_room</room>
   </rooms>
