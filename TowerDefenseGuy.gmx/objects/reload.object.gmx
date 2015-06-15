@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>draw_set_font(Arcade);
-draw_set_color(global.keyColor);
-draw_text(x,y,"Shortcut: ");
+draw_set_color(global.reloadColor); //set text color to red
+draw_text(x,y,"Reload  Time");
 </string>
           </argument>
         </arguments>

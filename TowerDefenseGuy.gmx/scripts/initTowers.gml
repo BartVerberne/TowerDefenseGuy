@@ -37,9 +37,9 @@ heavyTowerRange[1] = 4*Grid.gridPixelSize;
 heavyTowerRange[2] = 5*Grid.gridPixelSize;
 
 // Sniper tower
-sniperTowerReloadTime[0] = 2000;
-sniperTowerReloadTime[1] = 1500;
-sniperTowerReloadTime[2] = 1000;
+sniperTowerReloadTime[0] = 200;
+sniperTowerReloadTime[1] = 150;
+sniperTowerReloadTime[2] = 100;
 sniperTowerDamage[0] = 8;
 sniperTowerDamage[1] = 16;
 sniperTowerDamage[2] = 32;

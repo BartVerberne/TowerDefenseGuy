@@ -50,7 +50,7 @@ global.nlives = global.startingLives; //initial number of lives
           <argument>
             <kind>1</kind>
             <string>draw_set_font(Arcade);
-draw_set_color(global.livesColor);
+draw_set_color(c_white);
 draw_text(room_width-128,room_height,"Lives: "+string(global.nlives)); //draw score
 </string>
           </argument>
