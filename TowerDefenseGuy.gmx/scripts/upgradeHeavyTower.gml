@@ -3,8 +3,13 @@ var towerID = argument0;
 with (towerID)
 {
     myLevel++;
+<<<<<<< HEAD
     audio_play_sound(Place_sound, 1, false);
     if (myLevel == 0)
+=======
+    
+    if (myLevel == 1)
+>>>>>>> origin/Master-New
     {   
         sprite_index = Heavy_1_base;
         with (myTurretId) sprite_index = Heavy_1_turret;

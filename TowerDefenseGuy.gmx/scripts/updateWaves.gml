@@ -2,9 +2,8 @@ var curTime = get_timer();
 
 // if there are no creeps, we go to the next wave (initial empty wave -1)
 
-var creepCount = ds_list_size(allCreeps);
-
-if (creepCount == 0 && prevCreeps != 0)
+if (curWave < waveCount)
+if (checkWaveEnd())
 {
     curWave += 1;
     curWaveStartTime = curTime;
@@ -63,7 +62,3 @@ if (curWave < waveCount)
         }        
     }                
 }
-
-prevCreeps = ds_list_size(allCreeps);
-    
-    

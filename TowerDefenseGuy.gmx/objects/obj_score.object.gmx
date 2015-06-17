@@ -50,6 +50,7 @@
             <kind>1</kind>
             <string>draw_set_font(Arcade);
 draw_set_color(c_white); //set text color to white
+draw_set_halign(fa_left);
 draw_text((room_width/2)-256,room_height+16,"Score    "+string(global.points)); //draw score
 </string>
           </argument>

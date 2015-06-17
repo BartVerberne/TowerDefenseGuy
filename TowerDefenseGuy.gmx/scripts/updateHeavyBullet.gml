@@ -2,6 +2,8 @@ var bulletID = argument0;
 
 with (bulletID)
 {
+    updateAbstr();
+
     // test out of map
     if (myHitDone || x > room_width * 1.2 || x < 0 - room_width * 0.2 || y > room_height * 1.2 || y < 0 - room_height * 0.2)
     {

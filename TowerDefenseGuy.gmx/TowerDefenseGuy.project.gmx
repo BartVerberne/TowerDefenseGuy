@@ -114,6 +114,7 @@
       <script>scripts\resetGame.gml</script>
       <script>scripts\setKillerMode.gml</script>
       <script>scripts\setWaveMode.gml</script>
+      <script>scripts\initGlobals.gml</script>
     </scripts>
     <script>scripts\ClickDebug.gml</script>
     <scripts name="Grid">
@@ -215,6 +216,7 @@
           <script>scripts\initTargetProjAbstr.gml</script>
           <script>scripts\setBulletStats.gml</script>
           <script>scripts\setBulletStatsNoCreep.gml</script>
+          <script>scripts\updateAbstr.gml</script>
         </scripts>
         <scripts name="SimpleBullet">
           <script>scripts\initSimpleBullet.gml</script>
@@ -262,7 +264,7 @@
       <object>objects\heavyBullet</object>
       <object>objects\pierceBullet</object>
     </objects>
-    <object>objects\edge</object>
+    <object>objects\obj_score</object>
     <objects name="InGameGUI">
       <object>objects\obj_score</object>
       <object>objects\obj_lives</object>
@@ -274,9 +276,8 @@
       <object>objects\tower31</object>
       <object>objects\tower41</object>
       <object>objects\reloadGUI</object>
-      <object>objects\obj_highscore</object>
+      <object>objects\obj_gameover</object>
     </objects>
-    <object>objects\obj_gameover</object>
     <object>objects\gamename</object>
     <objects name="Start Screen">
       <object>objects\obj_start</object>
