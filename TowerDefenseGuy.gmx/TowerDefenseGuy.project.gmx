@@ -94,6 +94,7 @@
     <background>background\background3</background>
     <background>background\Cow_ab</background>
     <background>background\menu_help_control</background>
+    <background>background\menu_help_environment</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
