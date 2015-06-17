@@ -75,6 +75,7 @@
     //draw_text_transformed(room_width/2,(room_height/2),"Total  Score   " + string(global.points), 3,3,0);
     draw_text_transformed(room_width/2,room_height/2,"Game  Over", 3,3,0);
     draw_text_transformed(room_width/2,(room_height/2)+128,"Press  SPACE  to  Try  Again", 3,3,0);
+    draw_text_transformed(room_width/2,(room_height/2)+256,"Press  ESC   for  Main  Menu", 3,3,0);
     draw_set_color(c_black);
     draw_set_halign(fa_left);
 }
@@ -111,6 +112,38 @@
 
     resetGame();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (global.gameover) {
+    /*
+    audio_stop_sound(Gameover);
+    global.gameover = 0; //set gameover to initial value 0
+    room_goto(Start_screen);
+    */
+    game_restart();
+}
+
+
 </string>
           </argument>
         </arguments>
