@@ -17,6 +17,7 @@
     <sound>sound\GameoverOld</sound>
     <sound>sound\Gameover</sound>
     <sound>sound\Place_sound</sound>
+    <sound>sound\moo</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite1</sprite>

@@ -103,6 +103,7 @@
             <kind>1</kind>
             <string>if (global.gameover) {
     audio_stop_sound(Gameover);
+    audio_play_sound(moo, 1, false);
     audio_play_sound(bgm_ingame, 1, true);
     global.gameover = 0; //set gameover to initial value 0
     global.points = 0;
