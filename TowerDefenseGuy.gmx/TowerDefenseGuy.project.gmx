@@ -85,6 +85,7 @@
     <sprite>sprites\sprite37</sprite>
     <sprite>sprites\spr_cow</sprite>
     <sprite>sprites\sprite39</sprite>
+    <sprite>sprites\sprite42</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Tileset</background>
@@ -258,6 +259,9 @@
     <object>objects\object35</object>
     <objects name="Start Screen">
       <object>objects\obj_start</object>
+    </objects>
+    <objects name="Sounds">
+      <object>objects\menusound</object>
     </objects>
   </objects>
   <rooms name="rooms">
