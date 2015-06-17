@@ -4,7 +4,7 @@ with (towerID)
 {
     myLevel++;
     
-    if (myLevel == 0)
+    if (myLevel == 1)
     {   
         sprite_index = Heavy_1_base;
         with (myTurretId) sprite_index = Heavy_1_turret;
