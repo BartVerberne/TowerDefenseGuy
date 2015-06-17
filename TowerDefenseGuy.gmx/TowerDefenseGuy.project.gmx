@@ -14,6 +14,7 @@
     <sound>sound\snd_sniperturret</sound>
     <sound>sound\snd_basicturret</sound>
     <sound>sound\Menus</sound>
+    <sound>sound\GameoverOld</sound>
     <sound>sound\Gameover</sound>
   </sounds>
   <sprites name="sprites">
@@ -256,12 +257,13 @@
       <object>objects\reloadGUI</object>
     </objects>
     <object>objects\obj_gameover</object>
-    <object>objects\object35</object>
+    <object>objects\gamename</object>
     <objects name="Start Screen">
       <object>objects\obj_start</object>
     </objects>
     <objects name="Sounds">
       <object>objects\menusound</object>
+      <object>objects\gamebgm</object>
     </objects>
   </objects>
   <rooms name="rooms">

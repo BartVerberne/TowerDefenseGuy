@@ -48,9 +48,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.gameover) {
+            <string>if (global.gameover) { 
     //freeze everything
     //instance_deactivate_all(true);
+    audio_stop_sound(bgm_ingame);
+    if(!audio_is_playing(Gameover)) { //play sound once
+        audio_play_sound(Gameover, 1, false);
+    }
     draw_set_font(Arcade);
     draw_set_color(c_black); //bg color
     draw_set_alpha(0.5); //50% transparency
@@ -87,6 +91,8 @@
           <argument>
             <kind>1</kind>
             <string>if (global.gameover) {
+    audio_stop_sound(Gameover);
+    audio_play_sound(bgm_ingame, 1, true);
     global.gameover = 0; //set gameover to initial value 0
     global.points = 0;
     global.gold = global.startingGold;

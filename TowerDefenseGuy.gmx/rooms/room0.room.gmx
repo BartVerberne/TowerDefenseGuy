@@ -65,6 +65,7 @@
     <instance objName="costGUI" x="32" y="800" name="inst_AB519C44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="damageGUI" x="32" y="832" name="inst_2B0E0B13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="reloadGUI" x="32" y="864" name="inst_7A59B4C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="gamebgm" x="32" y="192" name="inst_5B90D070" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
