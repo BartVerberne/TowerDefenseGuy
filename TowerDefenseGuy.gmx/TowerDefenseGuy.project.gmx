@@ -95,10 +95,19 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\initGame.gml</script>
-    <script>scripts\resetGame.gml</script>
-    <script>scripts\updateGame.gml</script>
     <script>scripts\poinstLineDist.gml</script>
+    <scripts name="Waves">
+      <script>scripts\waveDef.gml</script>
+      <script>scripts\makeWave.gml</script>
+      <script>scripts\resetWaves.gml</script>
+    </scripts>
+    <scripts name="Game">
+      <script>scripts\initGame.gml</script>
+      <script>scripts\updateGame.gml</script>
+      <script>scripts\resetGame.gml</script>
+      <script>scripts\setKillerMode.gml</script>
+      <script>scripts\setWaveMode.gml</script>
+    </scripts>
     <script>scripts\ClickDebug.gml</script>
     <scripts name="Grid">
       <script>scripts\initGrid.gml</script>
@@ -164,7 +173,7 @@
       <script>scripts\initCreeps.gml</script>
       <script>scripts\updateCreeps.gml</script>
       <script>scripts\damageCreepRange.gml</script>
-      <script>scripts\spawnCreepXYT.gml</script>
+      <script>scripts\spawnCreepXYTS.gml</script>
       <scripts name="CreepAbstract">
         <script>scripts\initCreepAbstr.gml</script>
         <script>scripts\getPathLengthToPlayer.gml</script>
@@ -172,12 +181,16 @@
         <script>scripts\addDistoryListener.gml</script>
         <script>scripts\damageCreep.gml</script>
         <script>scripts\drawhealth.gml</script>
+        <script>scripts\scaleStats.gml</script>
       </scripts>
       <scripts name="Creep_0">
         <script>scripts\initCreep_0.gml</script>
       </scripts>
       <scripts name="Creep_1">
         <script>scripts\initCreep_1.gml</script>
+      </scripts>
+      <scripts name="Creep_2">
+        <script>scripts\initCreep_2.gml</script>
       </scripts>
       <script>scripts\resetCreeps.gml</script>
     </scripts>
@@ -235,6 +248,7 @@
     <objects name="Creeps">
       <object>objects\Creep_0</object>
       <object>objects\Creep_1</object>
+      <object>objects\Creep_2</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\simpleBullet</object>

@@ -6,6 +6,11 @@ global.livesColor = make_color_rgb(255,30,30);
 global.sqrt2 = 1.41421356237;
 global.sqrt2inv = 1 / global.sqrt2;
 global.PI = 3.14159265359;
+global.KILLERMODE = 0;
+global.WAVEMODE = 1;
+
+global.gameMode = global.WAVEMODE;
+global.gameStartTime = 0;
 
 with(Grid) initGrid();
 with(Player) initPlayer();
@@ -13,6 +18,7 @@ with(Player) initPlayer();
 initProjectiles();
 initCreeps();
 initTowers();
+waveDef();
 
 firstRun = true;
 selectedTowerType = Grid.GRID_TOWER_0;

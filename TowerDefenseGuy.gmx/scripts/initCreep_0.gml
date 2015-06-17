@@ -7,7 +7,7 @@ myHealth = myHealthMax;
 mySpeed = global.Creep_0_speed;
 
 myScore = global.Creep_0_score;
-myGold = global.Creep_0_gold; //gold creep gives
+myGold = global.Creep_0_gold;
 myPlayerReachTreshold = global.Creep_0_player_treshold;
 
 // specific for this creep:

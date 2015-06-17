@@ -6,7 +6,8 @@ with(OB_Game) {
     if (!firstRun) {
         resetCreeps();
         resetTowers();
-        resetProjectiles();       
+        resetProjectiles();   
+        resetWaves();    
     }
     firstRun = false;    
     

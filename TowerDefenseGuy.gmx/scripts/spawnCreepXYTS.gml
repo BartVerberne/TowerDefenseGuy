@@ -1,6 +1,7 @@
 var gridX = argument0;
 var gridY = argument1;
 var creepType = argument2;
+var scalar = argument3;
 
 if (isGridFreeXYB(gridX, gridY, true))
     {
@@ -17,6 +18,6 @@ if (isGridFreeXYB(gridX, gridY, true))
         var creepID = instance_create(gridX * Grid.gridPixelSize, 
                         gridY * Grid.gridPixelSize,
                         toPlaceObject);
-        scaleStats(creepID, 1);
+        scaleStats(creepID, scalar);
     }
 }
