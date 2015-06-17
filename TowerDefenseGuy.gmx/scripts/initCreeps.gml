@@ -28,6 +28,6 @@ global.Creep_2_player_treshold = Grid.gridPixelSize / 2.0;
 
 // scaling stats
 global.creepHealthMP = 1;
-global.creepScoreMP = 0.5;
-global.creepMoneyMP = 0.25;
-global.creepSpeedMP = 0.01;
+global.creepScoreMP = 0.0;
+global.creepMoneyMP = 0.0;
+global.creepSpeedMP = 0.0;

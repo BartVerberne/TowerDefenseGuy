@@ -3,7 +3,7 @@
 curWave = 0;
 prevCreeps = 0;
 curWaveStartTime = 0;
-waveCount = 4;
+waveCount = 10;
 initialDelayMs = 10 * 1000;
 
 //initially wave lists per wave
@@ -49,7 +49,7 @@ CREEP_SCALER = 7;
 targetwave = 0;
 entrance = NORTH_ENTRANCE;
 creepType = global.CREEP_0;
-creepCount = 1;
+creepCount = 10;
 delay = 0
 spawninterval = 500 * 1000;
 creepScale = 1;
@@ -61,7 +61,7 @@ targetwave = 1;
 
 entrance = EAST_ENTRANCE;
 creepType = global.CREEP_0;
-creepCount = 1;
+creepCount = 15;
 delay = 0
 spawninterval = 500 * 1000;
 creepScale = 2;
@@ -73,10 +73,10 @@ targetwave = 2;
 
 entrance = SOUTH_ENTRANCE;
 creepType = global.CREEP_1;
-creepCount = 1;
+creepCount = 10;
 delay = 0
 spawninterval = 500 * 1000;
-creepScale = 2;
+creepScale = 4;
 
 ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
 
@@ -85,30 +85,188 @@ targetwave = 3;
 
 entrance = WEST_ENTRANCE;
 creepType = global.CREEP_0;
-creepCount = 1;
+creepCount = 10;
 delay = 0
 spawninterval = 500 * 1000;
-creepScale = 1;
+creepScale = 5;
 
 ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
 
 entrance = NORTH_ENTRANCE;
-creepType = global.CREEP_0;
-creepCount = 1;
+creepType = global.CREEP_1;
+creepCount = 10;
 delay = 5000 * 1000
 spawninterval = 500 * 1000;
-creepScale = 1;
+creepScale = 5;
 
 ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
 
 //Wave 5
+targetwave = 4;
 entrance = EAST_ENTRANCE;
-creepType = global.CREEP_0;
-creepCount = 9;
+creepType = global.CREEP_2;
+creepCount = 1;
 delay = 0
 spawninterval = 500 * 1000;
-creepScale = 1;
+creepScale = 50;
 
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+//Wave 6
+targetwave = 5;
+
+entrance = NORTH_ENTRANCE;
+creepType = global.CREEP_0;
+creepCount = 10;
+delay = 0
+spawninterval = 500 * 1000;
+creepScale = 10;
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+entrance = EAST_ENTRANCE;
+creepType = global.CREEP_0;
+creepCount = 10;
+delay = 5000 * 1000;
+spawninterval = 500 * 1000;
+creepScale = 10;
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+entrance = SOUTH_ENTRANCE;
+creepType = global.CREEP_0;
+creepCount = 10;
+delay = 5000 * 1000
+spawninterval = 500 * 1000;
+creepScale = 10;
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+entrance = WEST_ENTRANCE;
+creepType = global.CREEP_0;
+creepCount = 10;
+delay = 5000 * 1000;
+spawninterval = 500 * 1000;
+creepScale = 10;
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+//Wave 7
+targetwave = 6;
+
+entrance = NORTH_ENTRANCE;
+creepType = global.CREEP_1;
+creepCount = 10;
+delay = 0
+spawninterval = 500 * 1000;
+creepScale = 10;
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+entrance = EAST_ENTRANCE;
+creepType = global.CREEP_1;
+creepCount = 10;
+delay = 5000 * 1000;
+spawninterval = 500 * 1000;
+creepScale = 10;
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+entrance = SOUTH_ENTRANCE;
+creepType = global.CREEP_1;
+creepCount = 10;
+delay = 5000 * 1000
+spawninterval = 500 * 1000;
+creepScale = 10;
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+entrance = WEST_ENTRANCE;
+creepType = global.CREEP_1;
+creepCount = 10;
+delay = 5000 * 1000;
+spawninterval = 500 * 1000;
+creepScale = 10;
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+//Wave 8
+targetwave = 7;
+
+entrance = NORTH_ENTRANCE;
+creepType = global.CREEP_0;
+creepCount = 10;
+delay = 0
+spawninterval = 500 * 1000;
+creepScale = 15;
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+entrance = EAST_ENTRANCE;
+creepType = global.CREEP_0;
+creepCount = 10;
+delay = 5000 * 1000;
+spawninterval = 500 * 1000;
+creepScale = 15;
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+entrance = SOUTH_ENTRANCE;
+creepType = global.CREEP_0;
+creepCount = 10;
+delay = 5000 * 1000
+spawninterval = 500 * 1000;
+creepScale = 15;
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+entrance = WEST_ENTRANCE;
+creepType = global.CREEP_0;
+creepCount = 10;
+delay = 5000 * 1000;
+spawninterval = 500 * 1000;
+creepScale = 80;
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+entrance = NORTH_ENTRANCE;
+creepType = global.CREEP_1;
+creepCount = 10;
+delay = 0
+spawninterval = 500 * 1000;
+creepScale = 15
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+entrance = EAST_ENTRANCE;
+creepType = global.CREEP_1;
+creepCount = 10;
+delay = 5000 * 1000;
+spawninterval = 500 * 1000;
+creepScale = 15;
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+entrance = SOUTH_ENTRANCE;
+creepType = global.CREEP_1;
+creepCount = 10;
+delay = 5000 * 1000
+spawninterval = 500 * 1000;
+creepScale = 15;
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+entrance = WEST_ENTRANCE;
+creepType = global.CREEP_1;
+creepCount = 10;
+delay = 5000 * 1000;
+spawninterval = 500 * 1000;
+creepScale = 15;
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+//Wave 9
+targetwave = 8; 
+entrance = NORTH_ENTRANCE;
+creepType = global.CREEP_1;
+creepCount = 100;
+delay = 0;
+spawninterval = 500 * 1000;
+creepScale = 20;
+ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
+
+//Wave 10
+targetwave = 9;
+entrance = NORTH_ENTRANCE;
+creepType = global.CREEP_2;
+creepCount = 1;
+delay = 0;
+spawninterval = 500 * 1000;
+creepScale = 300;
 ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
 
 // ---------------------

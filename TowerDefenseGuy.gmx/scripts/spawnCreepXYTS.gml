@@ -11,6 +11,7 @@ if (isGridFreeXYB(gridX, gridY, true))
     switch(creepType) {
         case global.CREEP_0 : toPlaceObject = Creep_0; break;
         case global.CREEP_1 : toPlaceObject = Creep_1; break;
+        case global.CREEP_2 : toPlaceObject = Creep_2; break;
     }
     
     if (toPlaceObject != 0)
