@@ -29,7 +29,6 @@
 draw_set_halign(fa_center);
 draw_set_font(Arcade);
 draw_text_transformed(x,y,"Cow Defense",5,5,0);
-audio_play_sound(moo, 1, false);
 </string>
           </argument>
         </arguments>

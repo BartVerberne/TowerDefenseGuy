@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.gameover = 0; //initally not game-overed
+audio_play_sound(moo, 1, false);
 </string>
           </argument>
         </arguments>
