@@ -7,3 +7,5 @@ with (Grid)
         }
     }
 }
+
+setPaths();

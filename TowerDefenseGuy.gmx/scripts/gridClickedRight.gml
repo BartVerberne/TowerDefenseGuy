@@ -15,6 +15,14 @@ if (isGridTowerXY(gridX, gridY))
     var towerID = Grid.gridIds[gridX, gridY];
     var towerType = Grid.gridContent[gridX, gridY];
     show_debug_message("delete tower: " + string(towerType));
-    with(towerID) toBeDeleted = !toBeDeleted;
-    //setPaths();
+    
+    if (global.gameMode == global.WAVEMODE) {
+        with(towerID) toBeDeleted = !toBeDeleted;
+    } 
+    else if (global.gameMode == global.KILLERMODE)
+    {
+        with(towerID) instance_destroy();
+        setPaths();
+    }
+    
 }
