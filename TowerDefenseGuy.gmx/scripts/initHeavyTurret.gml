@@ -11,6 +11,8 @@ myRange = OB_Game.heavyTowerRange[0];
 
 myTurretId = instance_create(x + Grid.halfPixelSize, y + Grid.halfPixelSize, HeavyTurret);
 
+audio_play_sound(Place_sound, 1, false);
+
 with(myTurretId)
 {
     depth = -2;

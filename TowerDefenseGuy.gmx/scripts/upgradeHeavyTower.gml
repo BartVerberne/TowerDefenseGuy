@@ -3,7 +3,7 @@ var towerID = argument0;
 with (towerID)
 {
     myLevel++;
-    
+    audio_play_sound(Place_sound, 1, false);
     if (myLevel == 0)
     {   
         sprite_index = Heavy_1_base;

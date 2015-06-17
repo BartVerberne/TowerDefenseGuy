@@ -16,6 +16,7 @@
     <sound>sound\Menus</sound>
     <sound>sound\GameoverOld</sound>
     <sound>sound\Gameover</sound>
+    <sound>sound\Place_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite1</sprite>
@@ -87,6 +88,7 @@
     <sprite>sprites\spr_cow</sprite>
     <sprite>sprites\sprite39</sprite>
     <sprite>sprites\sprite42</sprite>
+    <sprite>sprites\sprite43</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Tileset</background>
