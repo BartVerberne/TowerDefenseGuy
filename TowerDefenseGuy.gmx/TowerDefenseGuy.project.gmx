@@ -89,6 +89,7 @@
     <sprite>sprites\sprite39</sprite>
     <sprite>sprites\sprite42</sprite>
     <sprite>sprites\sprite43</sprite>
+    <sprite>sprites\Logo</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Tileset</background>
@@ -289,6 +290,7 @@
       <object>objects\gamebgm</object>
     </objects>
     <object>objects\spacecontinue</object>
+    <object>objects\object33</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_screen</room>
