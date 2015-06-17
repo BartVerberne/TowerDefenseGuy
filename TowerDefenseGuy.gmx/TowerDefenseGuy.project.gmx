@@ -103,6 +103,8 @@
       <script>scripts\waveDef.gml</script>
       <script>scripts\makeWave.gml</script>
       <script>scripts\resetWaves.gml</script>
+      <script>scripts\updateWaves.gml</script>
+      <script>scripts\checkWaveEnd.gml</script>
     </scripts>
     <scripts name="Game">
       <script>scripts\initGame.gml</script>
@@ -110,6 +112,7 @@
       <script>scripts\resetGame.gml</script>
       <script>scripts\setKillerMode.gml</script>
       <script>scripts\setWaveMode.gml</script>
+      <script>scripts\initGlobals.gml</script>
     </scripts>
     <script>scripts\ClickDebug.gml</script>
     <scripts name="Grid">
@@ -211,6 +214,7 @@
           <script>scripts\initTargetProjAbstr.gml</script>
           <script>scripts\setBulletStats.gml</script>
           <script>scripts\setBulletStatsNoCreep.gml</script>
+          <script>scripts\updateAbstr.gml</script>
         </scripts>
         <scripts name="SimpleBullet">
           <script>scripts\initSimpleBullet.gml</script>
@@ -281,9 +285,12 @@
       <object>objects\menusound</object>
       <object>objects\gamebgm</object>
     </objects>
+    <object>objects\spacecontinue</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_screen</room>
+    <room>rooms\tutorial0</room>
+    <room>rooms\tutorial1</room>
     <room>rooms\room0</room>
     <room>rooms\Sprite_room</room>
   </rooms>
