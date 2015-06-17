@@ -48,9 +48,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.gameover) {
+            <string>if (global.gameover) { 
     //freeze everything
     //instance_deactivate_all(true);
+    audio_stop_sound(bgm_ingame);
+    if(!audio_is_playing(Gameover)) { //play sound once
+        audio_play_sound(Gameover, 1, false);
+    }
     draw_set_font(Arcade);
     draw_set_color(c_black); //bg color
     draw_set_alpha(0.5); //50% transparency
@@ -58,7 +62,17 @@
     draw_set_halign(fa_center);
     draw_set_color(c_white); //text color
     draw_set_alpha(1); //100% transparency
-    draw_text_transformed(room_width/2,(room_height/2)-128,"Total  Score   " + string(global.points), 3,3,0);
+    if (global.points &gt; global.highscore) { // If the current score is higher than the previously saved high score
+        global.highscore = global.points; // set global.highscore to the NEW high score
+        draw_text_transformed(room_width/2,(room_height/2)-128,"New  High  Score   " + string(global.highscore), 3,3,0);
+        ini_open("score.ini"); // OPen the ini file
+        ini_write_real("score","highscore",global.highscore); // Write the new value
+        ini_close(); // Close the ini file
+    } else {
+        draw_text_transformed(room_width/2,(room_height/2)-128,"High  Score   " + string(global.highscore), 3,3,0);
+    }
+    //not showing it because you can see it at the bottom, only showing high score now in the middle
+    //draw_text_transformed(room_width/2,(room_height/2),"Total  Score   " + string(global.points), 3,3,0);
     draw_text_transformed(room_width/2,room_height/2,"Game  Over", 3,3,0);
     draw_text_transformed(room_width/2,(room_height/2)+128,"Press  SPACE  to  Try  Again", 3,3,0);
     draw_set_color(c_black);
@@ -87,6 +101,8 @@
           <argument>
             <kind>1</kind>
             <string>if (global.gameover) {
+    audio_stop_sound(Gameover);
+    audio_play_sound(bgm_ingame, 1, true);
     global.gameover = 0; //set gameover to initial value 0
     global.points = 0;
     global.gold = global.startingGold;

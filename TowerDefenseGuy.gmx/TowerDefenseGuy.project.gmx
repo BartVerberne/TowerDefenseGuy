@@ -14,6 +14,7 @@
     <sound>sound\snd_sniperturret</sound>
     <sound>sound\snd_basicturret</sound>
     <sound>sound\Menus</sound>
+    <sound>sound\GameoverOld</sound>
     <sound>sound\Gameover</sound>
   </sounds>
   <sprites name="sprites">
@@ -85,6 +86,7 @@
     <sprite>sprites\sprite37</sprite>
     <sprite>sprites\spr_cow</sprite>
     <sprite>sprites\sprite39</sprite>
+    <sprite>sprites\sprite42</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Tileset</background>
@@ -267,11 +269,16 @@
       <object>objects\tower31</object>
       <object>objects\tower41</object>
       <object>objects\reloadGUI</object>
+      <object>objects\obj_highscore</object>
     </objects>
     <object>objects\obj_gameover</object>
-    <object>objects\object35</object>
+    <object>objects\gamename</object>
     <objects name="Start Screen">
       <object>objects\obj_start</object>
+    </objects>
+    <objects name="Sounds">
+      <object>objects\menusound</object>
+      <object>objects\gamebgm</object>
     </objects>
   </objects>
   <rooms name="rooms">

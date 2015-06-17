@@ -73,8 +73,8 @@ if (!global.gameover) {
                 {
                     if (curTime > lastCreepSpawn + spawninterval)
                     {
-                        ds_list_replace(curInfo, 5, curTime);
-                        ds_list_replace(curInfo, 6, creepsSpawned+1);
+                        ds_list_replace(curInfo, LAST_CREEP_SPAWN, curTime);
+                        ds_list_replace(curInfo, CREEPS_SPAWNED, creepsSpawned+1);
                         
                         // spawn a creep
                         var entrance = ds_list_find_value(curInfo, ENTRANCE);
