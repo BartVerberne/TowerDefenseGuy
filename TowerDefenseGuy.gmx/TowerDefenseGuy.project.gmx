@@ -281,9 +281,12 @@
       <object>objects\menusound</object>
       <object>objects\gamebgm</object>
     </objects>
+    <object>objects\spacecontinue</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_screen</room>
+    <room>rooms\tutorial0</room>
+    <room>rooms\tutorial1</room>
     <room>rooms\room0</room>
     <room>rooms\Sprite_room</room>
   </rooms>
