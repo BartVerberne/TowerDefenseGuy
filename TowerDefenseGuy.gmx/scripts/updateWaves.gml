@@ -6,6 +6,7 @@ if (curWave < waveCount)
 if (checkWaveEnd())
 {
     curWave += 1;
+    endWave();
     curWaveStartTime = curTime;
     
     if (curWave < waveCount) {

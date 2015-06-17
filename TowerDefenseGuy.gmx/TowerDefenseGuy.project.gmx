@@ -98,6 +98,7 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\ClickDebug.gml</script>
     <script>scripts\poinstLineDist.gml</script>
     <scripts name="Waves">
       <script>scripts\waveDef.gml</script>
@@ -105,6 +106,7 @@
       <script>scripts\resetWaves.gml</script>
       <script>scripts\updateWaves.gml</script>
       <script>scripts\checkWaveEnd.gml</script>
+      <script>scripts\endWave.gml</script>
     </scripts>
     <scripts name="Game">
       <script>scripts\initGame.gml</script>
@@ -114,7 +116,6 @@
       <script>scripts\setWaveMode.gml</script>
       <script>scripts\initGlobals.gml</script>
     </scripts>
-    <script>scripts\ClickDebug.gml</script>
     <scripts name="Grid">
       <script>scripts\initGrid.gml</script>
       <script>scripts\resetGrid.gml</script>
@@ -153,6 +154,7 @@
         <script>scripts\isCreepInRangeXYR.gml</script>
         <script>scripts\getFurthestCreepInRangeXYR.gml</script>
         <script>scripts\deleteTower.gml</script>
+        <script>scripts\drawOverlay.gml</script>
       </scripts>
       <scripts name="Tower_0">
         <script>scripts\initTower_0.gml</script>
