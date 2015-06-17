@@ -3,7 +3,8 @@ var towerID = argument0;
 with (towerID)
 {
      myLevel++;
-audio_play_sound(Place_sound, 1, false);
+    
+    audio_play_sound(Place_sound, 1, false);
     if (myLevel == 1)
     {   
         sprite_index = Basic_1_base;
