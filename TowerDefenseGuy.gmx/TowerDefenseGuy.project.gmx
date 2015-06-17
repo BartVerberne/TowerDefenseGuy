@@ -103,6 +103,8 @@
       <script>scripts\waveDef.gml</script>
       <script>scripts\makeWave.gml</script>
       <script>scripts\resetWaves.gml</script>
+      <script>scripts\updateWaves.gml</script>
+      <script>scripts\checkWaveEnd.gml</script>
     </scripts>
     <scripts name="Game">
       <script>scripts\initGame.gml</script>

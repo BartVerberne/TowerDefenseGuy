@@ -76,4 +76,3 @@ creepScale = 1;
 ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
     
 // ---------------------
-
