@@ -1,3 +1,3 @@
 draw_self();
 
-//draw_sprite(deleteTowerOverlay,0,x,y);
+if (toBeDeleted) draw_sprite(delete_sprite,0,x,y);
