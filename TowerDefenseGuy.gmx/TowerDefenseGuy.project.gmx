@@ -264,7 +264,6 @@
       <object>objects\heavyBullet</object>
       <object>objects\pierceBullet</object>
     </objects>
-    <object>objects\obj_score</object>
     <objects name="InGameGUI">
       <object>objects\obj_score</object>
       <object>objects\obj_lives</object>
