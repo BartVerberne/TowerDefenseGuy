@@ -19,6 +19,8 @@ myDamage = OB_Game.baseTowerDamage[0];
 myRange = OB_Game.baseTowerRange[0];
 myTurretId = instance_create(x + Grid.halfPixelSize, y + Grid.halfPixelSize, Tower_0_turret);
 
+audio_play_sound(Place_sound, 1, false);
+
 with(myTurretId)
 {
     depth = -2;
