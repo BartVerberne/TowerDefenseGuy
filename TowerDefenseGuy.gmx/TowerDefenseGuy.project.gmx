@@ -255,6 +255,7 @@
       <object>objects\tower31</object>
       <object>objects\tower41</object>
       <object>objects\reloadGUI</object>
+      <object>objects\obj_highscore</object>
     </objects>
     <object>objects\obj_gameover</object>
     <object>objects\gamename</object>
