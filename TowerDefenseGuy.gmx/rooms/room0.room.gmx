@@ -67,7 +67,6 @@
     <instance objName="OB_Game" x="192" y="320" name="inst_6A29B00F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gameover" x="224" y="640" name="inst_7E4A9EE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_score" x="96" y="-64" name="inst_7003E9A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="224" y="192" name="inst_D3043CA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_highscore" x="256" y="-32" name="inst_047BCF71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

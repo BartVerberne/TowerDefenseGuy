@@ -89,6 +89,7 @@
     <sprite>sprites\sprite39</sprite>
     <sprite>sprites\sprite42</sprite>
     <sprite>sprites\sprite43</sprite>
+    <sprite>sprites\delete_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Tileset</background>
@@ -97,6 +98,7 @@
     <background>background\Cow_ab</background>
     <background>background\menu_help_control</background>
     <background>background\menu_help_environment</background>
+    <background>background\gui_bottom</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
