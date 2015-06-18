@@ -16,4 +16,5 @@ mySpeed = 0;
 myType = 0;
 myScore = 0;
 myGold = 0;
+myDamage = 1;
 myPlayerReachTreshold = 2; // in pixels

@@ -16,7 +16,7 @@ for(var i = 0; i < listSize; i++)
         // check end
         if (pixelDistToPlayerPxPy(x, y) < myPlayerReachTreshold) 
         {
-            damagePlayer();
+            damagePlayer(myDamage);
             
             ds_list_delete( creepBlock[myGridX + curDirX, myGridY + curDirY], 
                                 ds_list_find_index(creepBlock[myGridX + curDirX, myGridY + curDirY], id));
