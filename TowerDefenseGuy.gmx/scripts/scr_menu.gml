@@ -1,8 +1,8 @@
 switch (mpos)
 {
     case 0: setWaveMode(); room_goto(tutorial0); break;
-    //case 1: setKillerMode(); room_goto(tutorial0); break;
+    case 1: setKillerMode(); room_goto(tutorial0); break;
     //case 2: break;
     //case 3: break;
-    case 1: game_end(); break;
+    case 2: game_end(); break;
 }
