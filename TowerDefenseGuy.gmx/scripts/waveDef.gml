@@ -52,7 +52,7 @@ creepType = global.CREEP_0;
 creepCount = 10;
 delay = 0
 spawninterval = 500 * 1000;
-creepScale = 10;
+creepScale = 1;
 
 ds_list_add(waves[targetwave], makeWave(entrance, creepType, creepCount, delay, spawninterval, creepScale));
 
