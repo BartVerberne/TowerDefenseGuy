@@ -13,9 +13,9 @@ with(creepId) {
         audio_play_sound(snd_gettinghit, 1, false);
         return 1;
     }
-    else{ //creep damaged, but not dead
+    /*else{ //creep damaged, but not dead
         audio_play_sound(snd_enemygettinghit, 1, false);
-    }
+    }*/
     
 }
 

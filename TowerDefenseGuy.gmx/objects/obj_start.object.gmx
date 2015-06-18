@@ -65,11 +65,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>menu[0] = "Wave mode"
-menu[1] = "Killer mode"
-menu[2] = "Options"
-menu[3] = "High Scores"
-menu[4] = "Quit"
+            <string>//menu[0] = "Wave mode"
+//menu[1] = "Killer mode"
+//menu[2] = "Options"
+//menu[3] = "High Scores"
+menu[0] = "Play Game"
+menu[1] = "Quit"
 
 space = 64;
 mpos = 0;
@@ -140,7 +141,7 @@ draw_set_color(c_white);
 var m;
 for (m = 0; m &lt; array_length_1d(menu); m += 1)
 {
-    draw_text(x + space, y + (m * space),string(menu[m]));
+    draw_text_transformed(x + space, y + (m * space),string(menu[m]), 2, 2, 1);
 
 }
 draw_sprite(sprite_index, 2, x + 16, y - 16 + mpos * space);

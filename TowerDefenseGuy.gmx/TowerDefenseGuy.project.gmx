@@ -92,7 +92,6 @@
     <sprite>sprites\sprite43</sprite>
     <sprite>sprites\Logo</sprite>
     <sprite>sprites\delete_sprite</sprite>
-    <sprite>sprites\sprite46</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Tileset</background>
