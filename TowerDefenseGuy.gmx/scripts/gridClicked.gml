@@ -5,10 +5,18 @@ show_debug_message("clicked left" + string(delta_time));
 
 if (isGridTowerXY(gridX, gridY))
 {   
-    var towerID = Grid.gridIds[gridX, gridY];
-    var towerType = Grid.gridContent[gridX, gridY];
-    show_debug_message("upgrade tower: " + string(towerType));
-    upgradeTower(towerType, towerID);
+    var pX = getPlayerNextX();
+    var pY = getPlayerNextY();
+    var pdx = pX - gridX;
+    var pdy = pY - gridY;
+    var pdist = sqrt(pdx*pdx+pdy*pdy);
+    
+    if (pdist <= Player.towerPlaceRad) {
+        var towerID = Grid.gridIds[gridX, gridY];
+        var towerType = Grid.gridContent[gridX, gridY];
+        show_debug_message("upgrade tower: " + string(towerType));
+        upgradeTower(towerType, towerID);
+    }
 }
 else if (canPlaceTowerXY(gridX, gridY))
 {
