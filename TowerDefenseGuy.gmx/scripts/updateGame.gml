@@ -9,12 +9,12 @@ if (!global.gameover) {
         var toplace = global.CREEP_0;
         if (random(1) > 0.5) toplace = global.CREEP_1;
         
-        var rnd_scalar = 1;
+        var rnd_scalar = 10 * fChance;
         
-        if (random(1) < fChance) spawnCreepXYTS(0, 0, toplace, rnd_scalar);
-        if (random(1) < fChance) spawnCreepXYTS(Grid.gridWidth - 1, 0, toplace, rnd_scalar);
-        if (random(1) < fChance) spawnCreepXYTS(0, Grid.gridHeight - 1, toplace, rnd_scalar);
-        if (random(1) < fChance) spawnCreepXYTS(Grid.gridWidth - 1, Grid.gridHeight - 1, toplace, rnd_scalar);
+        if (random(1) < fChance) spawnCreepXYTS(entranceValX[NORTH_ENTRANCE], entranceValY[NORTH_ENTRANCE], toplace, rnd_scalar);
+        if (random(1) < fChance) spawnCreepXYTS(entranceValX[EAST_ENTRANCE], entranceValY[EAST_ENTRANCE], toplace, rnd_scalar);
+        if (random(1) < fChance) spawnCreepXYTS(entranceValX[SOUTH_ENTRANCE], entranceValY[SOUTH_ENTRANCE], toplace, rnd_scalar);
+        if (random(1) < fChance) spawnCreepXYTS(entranceValX[WEST_ENTRANCE], entranceValY[WEST_ENTRANCE], toplace, rnd_scalar);
         
     }
     else if (global.gameMode == global.WAVEMODE) {
