@@ -2,14 +2,14 @@ if (!global.gameover) {
 
     if (global.gameMode == global.KILLERMODE) {
 
-        fChance *= 1.0009;
+        fChance *= 1.00003;
         
         //show_debug_message(string(fChance));
         
         var toplace = global.CREEP_0;
         if (random(1) > 0.5) toplace = global.CREEP_1;
         
-        var rnd_scalar = 1 + 20 * fChance;
+        var rnd_scalar = 1 + 2 * fChance;
         
         if (random(1) < fChance) spawnCreepXYTS(entranceValX[NORTH_ENTRANCE], entranceValY[NORTH_ENTRANCE], toplace, rnd_scalar);
         if (random(1) < fChance) spawnCreepXYTS(entranceValX[EAST_ENTRANCE], entranceValY[EAST_ENTRANCE], toplace, rnd_scalar);
